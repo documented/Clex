@@ -2,18 +2,19 @@
 
 This project is all about providing examples for the existing API
 documentation that can be found via your REPL `(doc name)`, or via
-[clojure's API documentation](http://clojure.org/api "clojure.org's API documentation).
+[clojure's API documentation](http://clojure.org/api "clojure.org's API documentation").
 
 ## Read 'Em! ##
 
 If you're interested in reading the examples locally, simply: 
 
-    > `git clone git://github.com/defn/cljex.git`
-    > `cd cljex/`
+> `git clone git://github.com/defn/cljex.git`
+
+> `cd cljex/`
 
 and from the command line run:
 
-    > `java -jar clojure-examples.jar`
+> `java -jar clojure-examples.jar`
 
 This will spawn a webserver at [localhost:5885](http://localhost:5885).  Steer your
 browser there, and you're off to the races.
@@ -58,22 +59,23 @@ following format:
                  \-> ...
                  \-> ...
 
-To contribute an example, simply fork this project on @github@
+To contribute an example, simply fork this project on `github`
 (where else?), observe the proper **formatting** for examples, and get
 down to business.
 
 ## Formatting ##
 
-The formatting of these textile documents is very
+The formatting of these markdown documents is very
 straight-forward.  An example file looks like this:
 
     ### take ###
 
+    > *clojure.core/take*
+    > `([n coll])`    
     > Returns a lazy sequence of the first n items in coll, or all items if
     > there are fewer than n. 
-    > > *clojure.core/take*
-    > > `([n coll])`
 
+        #!clojure
         (take 5 (range 0 10))
         ;=> (0 1 2 3 4)
 
@@ -89,6 +91,8 @@ to-date you can check out [getclojure.org](http://getclojure.org/)
 ## Building ##
 
 Standard [leiningen](http://github.com/technomancy/leiningen/) stuff:
-    lein deps
-    lein compile
-    lein uberjar
+>    lein deps
+
+>    lein compile
+
+>    lein uberjar
