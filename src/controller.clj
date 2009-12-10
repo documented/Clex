@@ -1,1 +1,2 @@
-(ns cljex.controller)
+(ns cljex.controller
+  [:use cljex.core, compojure])

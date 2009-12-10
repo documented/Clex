@@ -1,6 +1,7 @@
 ### $NAME ###
 
 > *clojure.core/$NAME*
+>
 >     #!clojure
 >     ([n collection])
 >

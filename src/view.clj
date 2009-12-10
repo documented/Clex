@@ -1,1 +1,2 @@
-(ns cljex.view)
+(ns cljex.view
+  [:use cljex.core, compojure])
