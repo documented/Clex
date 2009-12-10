@@ -14,7 +14,7 @@ If you're interested in reading the examples locally, simply:
 
 and from the command line run:
 
-> `java -jar clojure-examples.jar`
+> `java -jar cljex.jar`
 
 This will spawn a webserver at [localhost:5885](http://localhost:5885).  Steer your
 browser there, and you're off to the races.
