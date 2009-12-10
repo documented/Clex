@@ -1,0 +1,92 @@
+h1. cljex
+
+p. This project is all about providing examples for the existing API
+documentation that can be found via your REPL @(doc name)@, or via
+"clojure.org's api":http://clojure.org/api.
+
+h2. Read 'Em!
+
+p. If you're interested in reading the examples locally, simply: 
+
+> @git clone git://github.com/defn/cljex.git@
+> @cd cljex/@
+
+and from the command line run:
+
+> @java -jar clojure-examples.jar@.
+
+This will spawn a webserver at @http://localhost:5885@.  Steer your
+browser there, and you're off to the races.
+
+p. If you'd rather not go to the trouble, the current progress of the
+project can always be viewed at "getclojure.org":http://getclojure.org/
+
+h2. Contributions Very Welcome
+
+p. If you're planning on contributing to the code being used for the
+project itself, currently the only requirements for building are:
+
+* "Clojure":http://clojure.org/
+* "Compojure":http://github.com/weavejester/compojure/
+* "Leiningen":http://github.com/technomancy/leiningen/
+* "Pygments":http://pygments.org/
+
+p. If you'd like to contribute documentation, it's very simple.  Under
+the @src/@ directory you'll find a @docs/@ directory which contains
+textile files.
+
+p. From there you'll find a directory structure with the examples in the
+following format:
+
+pre. cljex/
+   \-> src/
+        \-> docs/
+             \-> a/
+             |    \-> accessor.textile
+             |    |-> ...
+             |    |-> ...
+             |
+             \-> b/
+             |    \-> bases.textile
+             |    |-> ...
+             |    |-> ...
+             |
+             \-> ...
+             \-> ...
+
+p. To contribute an example, simply fork this project on @github@
+(where else?), observe the proper *formatting* for examples, and get
+down to business.
+
+h2. Formatting
+
+p. The formatting of these textile documents is very
+straight-forward.  An example file looks like this:
+
+notextile. <pre>h3. take
+<br>
+bq. Returns a lazy sequence of the first n items in coll, or all items if
+there are fewer than n. ~clojure.core/take~ @([n coll])@
+<br>
+#begin_code
+(take 5 (range 0 10))
+;=> (0 1 2 3 4)
+#end_code</pre>
+
+p. For many of Clojure's forms there are multiple examples one could
+give to flesh out the possibilities and possible use-cases for a
+particular form.  The above example documentation is rather sparse,
+feel free to embellish where necessary.  The only hard and fast rule
+is that code blocks must be delimited by the #begin_code and #end_code
+in order to apply syntax highlighting across the whole project
+uniformly.  Other than that, feel free to experiment, make
+suggestions, etc. 
+
+p. Finally, to see a current online version of the examples submitted
+to-date you can check out "getclojure.org":http://getclojure.org/
+
+h2. Building
+
+p. Currently building is a work in progress.  I'll update this as soon
+as there's more than a README.textile in the repo, I promise.
+
