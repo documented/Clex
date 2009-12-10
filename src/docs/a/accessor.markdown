@@ -9,5 +9,13 @@
 >  performance-critical areas.
 
     #!clojure
-    (defn a [x]
-      (+ a x))
+    (defstruct machine :id :description)
+    ;=> #'user/machine
+    (def m (struct machine "rhickey" "the inventor of Clojure"))
+    ;=> #'user/m
+    (:id m)
+    ;=> rhickey
+    (def machine-id (accessor machine :id)) ; bind accessor
+    ;=> #'user/machine-id
+    (machine-id m)
+    ;=> "rhickey"
