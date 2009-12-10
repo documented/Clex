@@ -1,5 +1,4 @@
 (ns cljex.core
   (:gen-class)
-  [:use compojure])
-
+  [:use compojure, cljex.view, cljex.controller])
 
