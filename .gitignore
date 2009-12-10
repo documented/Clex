@@ -2,5 +2,5 @@ pom-generated.xml
 Manifest.txt
 *.jar
 .DS_Store
-..jar
+*jar
 lib/*.jar
