@@ -55,6 +55,10 @@
     (filter #(re-matches #"(.*markdown)" %)
             (map #(str %) (file-seq path)))))
 
+(defn apply-markdown
+  [path-to-md write-to-path]
+  (sh "/usr/local/bin/markdown" path-to-md "-f" write-to-path "-x codehilite"))
+
 ;; (defn markdown-to-html
 ;;   [paths-coll]
 ;;   (let [filename (regex...)
