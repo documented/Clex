@@ -4,3 +4,5 @@ Manifest.txt
 .DS_Store
 *jar
 lib/*.jar
+todo.html
+todo.org
