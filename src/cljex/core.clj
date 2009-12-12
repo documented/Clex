@@ -59,11 +59,22 @@
   [path-to-md write-to-path]
   (sh "/usr/local/bin/markdown" path-to-md "-f" write-to-path "-x codehilite"))
 
-;; (defn markdown-to-html
-;;   [paths-coll]
-;;   (let [filename (regex...)
-;;         basename])
-;;   (sh (format "markdown ")))
+(defn sort-ns
+  "Sorts the keys from the map returned by ns-publics for a given nspace into alphabetical order."
+  [nspace]
+  (vals (ns-publics nspace)))
+
+;; modified print doc to pop the current clj documentation for a form into the markdown file of the same name
+(defn print-doc-out)
+
+;; temporary reference for the above fn
+(defn print-ns-docs-to-file
+ "Prints the documentation for a given nspace to a file-name which is located on path."
+ [nspace, path-to-file, file-name]
+ (with-out-writer
+   (file-str path-to-file file-name)
+   (doseq [s (sort-ns nspace)]
+     (print-doc s))))
 
 ;; routes
 (defroutes main-routes
