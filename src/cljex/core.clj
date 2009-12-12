@@ -3,51 +3,9 @@
   [:use compojure,
    clojure.contrib.duck-streams,
    clojure.contrib.shell-out,
-   clojure.contrib.str-utils]
+   clojure.contrib.str-utils,
+   cljex.view]
   [:import java.io.File])
-
-;; basic view templates
-(def *header*
-     (html-tree
-      [:h1 "getclojure"]))
-
-;; navigation
-(def *nav*
-     (html-tree
-      [:ul
-       [:li
-        [:h3
-         [:a {:href ""}]]]
-       [:li
-        [:h3
-         [:a {:href ""}]]]]))
-
-;; footer
-(def *footer*
-     (html-tree
-      [:strong "footer"]))
-
-;; base html layout
-(defn html-doc
-  [title & body]
-  (html
-   (doctype "xhtml/transitional")
-   [:html
-    [:head [:title title]
-     (include-css "/src/public/css/global.css"
-                  "/src/public/css/pygments.css")]
-    [:body
-     [:div {:id "header"} *header*]
-     [:div {:id "nav"} *nav*]
-     ,,body,,
-     [:footer
-      *footer*]]]))
-
-;; api entry "partial"
-(defn api-entry
-  [doc-path]
-  (html-tree
-   [:h2 [:a {:href doc-path}]]))
 
 (defn get-markdown-paths
   [docs-path]  ; must be the /full/path, no ~ allowed
@@ -77,7 +35,7 @@
      (print-doc s))))
 
 ;; routes
-(defroutes main-routes
-  (GET "/"
-       api-listing)
-  (GET "*"))
+;; (defroutes main-routes
+;;   (GET "/"
+;;        api-listing)
+;;   (GET "*"))
