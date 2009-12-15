@@ -1,4 +1,5 @@
 #!/bin/bash
+
 find src/docs -name '*.markdown' | while read FILENAME ; do 
     name=$(basename -s '.markdown' $FILENAME)
     outputname="src/public/docs/${name}.html"
@@ -19,4 +20,5 @@ lein uberjar
 # our clojure libraries and will be best suited for this prj
 rm cljex.jar
 mv cljex-standalone.jar cljex.jar
+
 #End 

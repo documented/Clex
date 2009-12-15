@@ -1,0 +1,2 @@
+(GET "/docs/:entry"
+     ())
