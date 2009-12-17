@@ -24,32 +24,3 @@
   (html (map #(link-to %)
              (map #(str %) (file-seq
                             (java.io.File. "/Users/defn/git/cljex/src/public/docs"))))))
-
-(defn remove-leading-whitespace 
-  "Find out what the minimum leading whitespace is for a doc block and remove it.
-We do this because lots of people indent their doc blocks to the indentation of the 
-string, which looks nasty when you display it."
-  [s]
-  (when s
-    (let [lines (.split s "\\n") 
-          prefix-lens (map #(count (re-find #"^ *" %)) 
-                           (filter #(not (= 0 (count %))) 
-                                   (next lines)))
-          min-prefix (when (seq prefix-lens) (apply min prefix-lens))
-          regex (when min-prefix (apply str "^" (repeat min-prefix " ")))]
-      (if regex
-        (apply str (interpose "\n" (map #(.replaceAll % regex "") lines)))
-        s))))
-
-(defn var-type 
-  "Determing the type (var, function, macro) of a var from the metadata and
-return it as a string."
-  [v]
-  (cond (:macro ^v) "macro"
-        (= (:tag ^v) clojure.lang.MultiFn) "multimethod"
-        (:arglists ^v) "function"
-        :else "var"))
-
-(defn vars-for-ns [ns]
-  (for [v (sort-by (comp :name meta) (vals (ns-interns ns)))
-        :when (and (or (:wiki-doc ^v) (:doc ^v)) (not (:skip-wiki ^v)) (not (:private ^v)))] v))
