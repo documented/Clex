@@ -19,6 +19,17 @@
     (doseq [s (sort-ns nspace)]
       (print-doc s))))
 
+(defn build-filename [input]
+  (str "_" (second (re-find #"\/(.*)\Z" (str input)))))
+
+(defn print-core-docs-to-files
+  [path-to-files]
+  (let [docs (sort-ns 'clojure.core)]
+    (doseq [s docs]
+      (let [filename (build-filename s)]
+        (with-out-writer (file-str path-to-files filename)
+          (print-doc s))))))
+
 (defn docs-index []
   "Creates links to all of the docs located in public/docs/*"
   (html (map #(link-to %)
