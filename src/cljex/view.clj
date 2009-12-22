@@ -36,7 +36,7 @@
      (include-css "../../src/public/css/global.css"
                   "../../src/public/css/pygmentize.css")]
     [:frameset {:cols "175px,*"}
-     [:frame {:name "index"}
+     [:frame#name "index"
       [:html [:head [:title "index"]]
        [:body
         [:ul
