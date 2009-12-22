@@ -1,0 +1,4 @@
+-------------------------
+clojure.core/prn-str
+([& xs])
+  prn to a string, returning it

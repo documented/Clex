@@ -1,0 +1,5 @@
+-------------------------
+clojure.core/macroexpand-1
+([form])
+  If form represents a macro form, returns its expansion,
+  else returns form.

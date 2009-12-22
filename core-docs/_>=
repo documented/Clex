@@ -1,0 +1,5 @@
+-------------------------
+clojure.core/>=
+([x] [x y] [x y & more])
+  Returns non-nil if nums are in monotonically non-increasing order,
+  otherwise false.

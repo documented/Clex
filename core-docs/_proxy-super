@@ -1,0 +1,6 @@
+-------------------------
+clojure.core/proxy-super
+([meth & args])
+Macro
+  Use to call a superclass method in the body of a proxy method. 
+  Note, expansion captures 'this

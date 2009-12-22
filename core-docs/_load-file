@@ -1,0 +1,4 @@
+-------------------------
+clojure.core/load-file
+([name])
+  Sequentially read and evaluate the set of forms contained in the file.

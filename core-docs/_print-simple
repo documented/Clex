@@ -1,0 +1,4 @@
+-------------------------
+clojure.core/print-simple
+([o w])
+  nil

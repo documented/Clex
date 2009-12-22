@@ -1,0 +1,4 @@
+-------------------------
+clojure.core/ref-max-history
+([ref] [ref n])
+  Gets the max-history of a ref, or sets it and returns the ref

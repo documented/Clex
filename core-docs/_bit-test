@@ -1,0 +1,4 @@
+-------------------------
+clojure.core/bit-test
+([x n])
+  Test bit at index n

@@ -1,0 +1,4 @@
+-------------------------
+clojure.core/*compile-files*
+nil
+  Set to true when compiling files, false otherwise.

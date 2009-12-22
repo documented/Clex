@@ -1,0 +1,4 @@
+-------------------------
+clojure.core/pos?
+([x])
+  Returns true if num is greater than zero, else false

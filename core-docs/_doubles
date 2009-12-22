@@ -1,0 +1,4 @@
+-------------------------
+clojure.core/doubles
+([xs])
+  Casts to double[]

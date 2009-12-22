@@ -1,0 +1,4 @@
+-------------------------
+clojure.core/counted?
+([coll])
+  Returns true if coll implements count in constant time

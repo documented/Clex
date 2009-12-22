@@ -1,0 +1,5 @@
+-------------------------
+clojure.core/defmethod
+([multifn dispatch-val & fn-tail])
+Macro
+  Creates and installs a new method of multimethod associated with dispatch-value. 

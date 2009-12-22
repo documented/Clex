@@ -1,0 +1,4 @@
+-------------------------
+clojure.core/name
+([x])
+  Returns the name String of a symbol or keyword.

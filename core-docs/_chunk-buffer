@@ -1,0 +1,4 @@
+-------------------------
+clojure.core/chunk-buffer
+([capacity])
+  nil

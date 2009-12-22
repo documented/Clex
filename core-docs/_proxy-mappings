@@ -1,0 +1,4 @@
+-------------------------
+clojure.core/proxy-mappings
+([proxy])
+  Takes a proxy instance and returns the proxy's fn map.

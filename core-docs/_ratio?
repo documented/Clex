@@ -1,0 +1,4 @@
+-------------------------
+clojure.core/ratio?
+([n])
+  Returns true if n is a Ratio

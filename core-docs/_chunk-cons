@@ -1,0 +1,4 @@
+-------------------------
+clojure.core/chunk-cons
+([chunk rest])
+  nil

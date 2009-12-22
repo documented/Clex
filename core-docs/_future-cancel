@@ -1,0 +1,4 @@
+-------------------------
+clojure.core/future-cancel
+([f])
+  Cancels the future, if possible.

@@ -1,0 +1,4 @@
+-------------------------
+clojure.core/println
+([& more])
+  Same as print followed by (newline)

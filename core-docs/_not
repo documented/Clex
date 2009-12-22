@@ -1,0 +1,4 @@
+-------------------------
+clojure.core/not
+([x])
+  Returns true if x is logical false, false otherwise.

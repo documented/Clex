@@ -1,0 +1,4 @@
+-------------------------
+clojure.core/map?
+([x])
+  Return true if x implements IPersistentMap

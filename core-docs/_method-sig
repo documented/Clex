@@ -1,0 +1,4 @@
+-------------------------
+clojure.core/method-sig
+([meth])
+  nil

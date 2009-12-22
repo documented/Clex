@@ -1,0 +1,4 @@
+-------------------------
+clojure.core/char
+([x])
+  Coerce to char

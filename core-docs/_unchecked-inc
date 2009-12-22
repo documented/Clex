@@ -1,0 +1,5 @@
+-------------------------
+clojure.core/unchecked-inc
+([x])
+  Returns a number one greater than x, an int or long.
+  Note - uses a primitive operator subject to overflow.

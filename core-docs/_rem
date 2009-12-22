@@ -1,0 +1,4 @@
+-------------------------
+clojure.core/rem
+([num div])
+  remainder of dividing numerator by denominator.

@@ -1,0 +1,4 @@
+-------------------------
+clojure.core/select-keys
+([map keyseq])
+  Returns a map containing only those entries in map whose key is in keys

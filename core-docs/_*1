@@ -1,0 +1,4 @@
+-------------------------
+clojure.core/*1
+nil
+  bound in a repl thread to the most recent value printed

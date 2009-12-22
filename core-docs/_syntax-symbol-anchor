@@ -1,0 +1,5 @@
+-------------------------
+clojure.core/syntax-symbol-anchor
+([x])
+  Returns the anchor tag on http://clojure.org/special_forms for the
+  special form that uses syntax symbol x, or nil

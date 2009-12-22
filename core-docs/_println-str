@@ -1,0 +1,4 @@
+-------------------------
+clojure.core/println-str
+([& xs])
+  println to a string, returning it

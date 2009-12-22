@@ -1,0 +1,4 @@
+-------------------------
+clojure.core/var-get
+([x])
+  Gets the value in the var object

@@ -1,0 +1,5 @@
+-------------------------
+clojure.core/slurp
+([f] [f enc])
+  Reads the file named by f using the encoding enc into a string
+  and returns it.
