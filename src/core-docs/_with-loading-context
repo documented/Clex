@@ -1,5 +1,0 @@
--------------------------
-clojure.core/with-loading-context
-([& body])
-Macro
-  nil

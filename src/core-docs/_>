@@ -1,5 +1,0 @@
--------------------------
-clojure.core/>
-([x] [x y] [x y & more])
-  Returns non-nil if nums are in monotonically decreasing order,
-  otherwise false.

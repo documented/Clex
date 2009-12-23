@@ -1,4 +1,0 @@
--------------------------
-clojure.core/shorts
-([xs])
-  Casts to shorts[]

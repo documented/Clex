@@ -1,4 +1,0 @@
--------------------------
-clojure.core/chars
-([xs])
-  Casts to chars[]

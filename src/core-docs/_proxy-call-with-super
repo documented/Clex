@@ -1,4 +1,0 @@
--------------------------
-clojure.core/proxy-call-with-super
-([call this meth])
-  nil

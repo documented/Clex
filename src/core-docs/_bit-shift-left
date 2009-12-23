@@ -1,4 +1,0 @@
--------------------------
-clojure.core/bit-shift-left
-([x n])
-  Bitwise shift left

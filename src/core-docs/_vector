@@ -1,4 +1,0 @@
--------------------------
-clojure.core/vector
-([] [& args])
-  Creates a new vector containing the args.

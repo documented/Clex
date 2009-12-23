@@ -1,4 +1,0 @@
--------------------------
-clojure.core/==
-([x] [x y] [x y & more])
-  Returns non-nil if nums all have the same value, otherwise false

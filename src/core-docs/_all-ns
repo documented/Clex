@@ -1,4 +1,0 @@
--------------------------
-clojure.core/all-ns
-([])
-  Returns a sequence of all namespaces.

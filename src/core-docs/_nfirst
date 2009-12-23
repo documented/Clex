@@ -1,4 +1,0 @@
--------------------------
-clojure.core/nfirst
-([x])
-  Same as (next (first x))

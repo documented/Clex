@@ -1,4 +1,0 @@
--------------------------
-clojure.core/min
-([x] [x y] [x y & more])
-  Returns the least of the nums.

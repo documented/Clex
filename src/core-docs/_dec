@@ -1,4 +1,0 @@
--------------------------
-clojure.core/dec
-([x])
-  Returns a number one less than num.

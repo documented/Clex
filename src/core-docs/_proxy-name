@@ -1,4 +1,0 @@
--------------------------
-clojure.core/proxy-name
-([super interfaces])
-  nil

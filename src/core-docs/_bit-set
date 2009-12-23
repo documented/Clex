@@ -1,4 +1,0 @@
--------------------------
-clojure.core/bit-set
-([x n])
-  Set bit at index n

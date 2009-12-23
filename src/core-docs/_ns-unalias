@@ -1,4 +1,0 @@
--------------------------
-clojure.core/ns-unalias
-([ns sym])
-  Removes the alias for the symbol from the namespace.

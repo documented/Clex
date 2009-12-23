@@ -1,4 +1,0 @@
--------------------------
-clojure.core/ffirst
-([x])
-  Same as (first (first x))

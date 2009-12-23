@@ -1,4 +1,0 @@
--------------------------
-clojure.core/class
-([x])
-  Returns the Class of x

@@ -1,4 +1,0 @@
--------------------------
-clojure.core/hash
-([x])
-  Returns the hash code of its argument

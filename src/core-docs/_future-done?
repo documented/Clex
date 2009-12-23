@@ -1,4 +1,0 @@
--------------------------
-clojure.core/future-done?
-([f])
-  Returns true if future f is done

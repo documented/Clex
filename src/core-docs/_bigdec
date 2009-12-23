@@ -1,4 +1,0 @@
--------------------------
-clojure.core/bigdec
-([x])
-  Coerce to BigDecimal

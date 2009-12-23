@@ -1,4 +1,0 @@
--------------------------
-clojure.core/bit-or
-([x y])
-  Bitwise or

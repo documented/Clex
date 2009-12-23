@@ -1,4 +1,0 @@
--------------------------
-clojure.core/print-ctor
-([o print-args w])
-  nil

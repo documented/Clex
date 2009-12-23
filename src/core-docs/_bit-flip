@@ -1,4 +1,0 @@
--------------------------
-clojure.core/bit-flip
-([x n])
-  Flip bit at index n

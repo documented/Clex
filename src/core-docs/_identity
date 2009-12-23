@@ -1,4 +1,0 @@
--------------------------
-clojure.core/identity
-([x])
-  Returns its argument.

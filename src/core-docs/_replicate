@@ -1,4 +1,0 @@
--------------------------
-clojure.core/replicate
-([n x])
-  Returns a lazy seq of n xs.

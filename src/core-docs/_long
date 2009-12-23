@@ -1,4 +1,0 @@
--------------------------
-clojure.core/long
-([x])
-  Coerce to long

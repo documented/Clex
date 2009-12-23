@@ -1,4 +1,0 @@
--------------------------
-clojure.core/print-str
-([& xs])
-  print to a string, returning it

@@ -1,4 +1,0 @@
--------------------------
-clojure.core/double
-([x])
-  Coerce to double

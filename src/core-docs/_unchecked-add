@@ -1,5 +1,0 @@
--------------------------
-clojure.core/unchecked-add
-([x y])
-  Returns the sum of x and y, both int or long.
-  Note - uses a primitive operator subject to overflow.

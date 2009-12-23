@@ -1,4 +1,0 @@
--------------------------
-clojure.core/bit-and
-([x y])
-  Bitwise and

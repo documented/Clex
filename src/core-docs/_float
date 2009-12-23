@@ -1,4 +1,0 @@
--------------------------
-clojure.core/float
-([x])
-  Coerce to float

@@ -1,4 +1,0 @@
--------------------------
-clojure.core/list?
-([x])
-  Returns true if x implements IPersistentList

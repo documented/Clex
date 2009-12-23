@@ -1,4 +1,0 @@
--------------------------
-clojure.core/ref-history-count
-([ref])
-  Returns the history count of a ref

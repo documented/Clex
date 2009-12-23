@@ -1,4 +1,0 @@
--------------------------
-clojure.core/bit-xor
-([x y])
-  Bitwise exclusive or

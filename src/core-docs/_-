@@ -1,5 +1,0 @@
--------------------------
-clojure.core/-
-([x] [x y] [x y & more])
-  If no ys are supplied, returns the negation of x, else subtracts
-  the ys from x and returns the result.

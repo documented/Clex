@@ -1,4 +1,0 @@
--------------------------
-clojure.core/short
-([x])
-  Coerce to short

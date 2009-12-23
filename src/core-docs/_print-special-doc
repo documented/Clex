@@ -1,4 +1,0 @@
--------------------------
-clojure.core/print-special-doc
-([name type anchor])
-  nil

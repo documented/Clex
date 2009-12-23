@@ -1,4 +1,0 @@
--------------------------
-clojure.core/boolean
-([x])
-  Coerce to boolean

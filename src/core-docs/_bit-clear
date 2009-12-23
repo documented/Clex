@@ -1,4 +1,0 @@
--------------------------
-clojure.core/bit-clear
-([x n])
-  Clear bit at index n

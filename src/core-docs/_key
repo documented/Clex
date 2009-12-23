@@ -1,4 +1,0 @@
--------------------------
-clojure.core/key
-([e])
-  Returns the key of the map entry.

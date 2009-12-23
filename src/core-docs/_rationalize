@@ -1,4 +1,0 @@
--------------------------
-clojure.core/rationalize
-([num])
-  returns the rational value of num

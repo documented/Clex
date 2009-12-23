@@ -1,6 +1,0 @@
--------------------------
-clojure.core/sort
-([coll] [comp coll])
-  Returns a sorted sequence of the items in coll. If no comparator is
-  supplied, uses compare. comparator must
-  implement java.util.Comparator.

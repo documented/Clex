@@ -1,4 +1,0 @@
--------------------------
-clojure.core/chunk-rest
-([s])
-  nil

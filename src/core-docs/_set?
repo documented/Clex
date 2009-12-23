@@ -1,4 +1,0 @@
--------------------------
-clojure.core/set?
-([x])
-  Returns true if x implements IPersistentSet

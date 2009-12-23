@@ -1,4 +1,0 @@
--------------------------
-clojure.core/second
-([x])
-  Same as (first (next x))

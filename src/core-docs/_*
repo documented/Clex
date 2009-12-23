@@ -1,4 +1,0 @@
--------------------------
-clojure.core/*
-([] [x] [x y] [x y & more])
-  Returns the product of nums. (*) returns 1.

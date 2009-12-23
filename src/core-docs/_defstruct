@@ -1,5 +1,0 @@
--------------------------
-clojure.core/defstruct
-([name & keys])
-Macro
-  Same as (def name (create-struct keys...))

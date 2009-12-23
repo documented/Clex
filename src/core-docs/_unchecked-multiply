@@ -1,5 +1,0 @@
--------------------------
-clojure.core/unchecked-multiply
-([x y])
-  Returns the product of x and y, both int or long.
-  Note - uses a primitive operator subject to overflow.

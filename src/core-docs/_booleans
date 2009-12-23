@@ -1,4 +1,0 @@
--------------------------
-clojure.core/booleans
-([xs])
-  Casts to boolean[]

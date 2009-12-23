@@ -1,4 +1,0 @@
--------------------------
-clojure.core/bigint
-([x])
-  Coerce to BigInteger

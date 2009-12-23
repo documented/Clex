@@ -1,4 +1,0 @@
--------------------------
-clojure.core/read-string
-([s])
-  Reads one object from the string s

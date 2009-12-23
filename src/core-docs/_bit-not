@@ -1,4 +1,0 @@
--------------------------
-clojure.core/bit-not
-([x])
-  Bitwise complement

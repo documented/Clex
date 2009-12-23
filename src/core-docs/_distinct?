@@ -1,4 +1,0 @@
--------------------------
-clojure.core/distinct?
-([x] [x y] [x y & more])
-  Returns true if no two of the arguments are =

@@ -1,4 +1,0 @@
--------------------------
-clojure.core/list
-([& items])
-  Creates a new list containing the items.

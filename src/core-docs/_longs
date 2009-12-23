@@ -1,4 +1,0 @@
--------------------------
-clojure.core/longs
-([xs])
-  Casts to long[]

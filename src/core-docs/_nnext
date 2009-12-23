@@ -1,4 +1,0 @@
--------------------------
-clojure.core/nnext
-([x])
-  Same as (next (next x))

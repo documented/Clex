@@ -1,4 +1,0 @@
--------------------------
-clojure.core/set
-([coll])
-  Returns a set of the distinct elements of coll.

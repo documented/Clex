@@ -1,4 +1,0 @@
--------------------------
-clojure.core/ns-refers
-([ns])
-  Returns a map of the refer mappings for the namespace.

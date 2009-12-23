@@ -1,4 +1,0 @@
--------------------------
-clojure.core/filter
-([pred coll])
-  nil

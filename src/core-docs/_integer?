@@ -1,4 +1,0 @@
--------------------------
-clojure.core/integer?
-([n])
-  Returns true if n is an integer

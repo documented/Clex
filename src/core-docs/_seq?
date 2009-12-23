@@ -1,4 +1,0 @@
--------------------------
-clojure.core/seq?
-([x])
-  Return true if x implements ISeq

@@ -1,4 +1,0 @@
--------------------------
-clojure.core/sorted-set
-([& keys])
-  Returns a new sorted set with supplied keys.

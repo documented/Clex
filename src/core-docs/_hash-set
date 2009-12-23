@@ -1,4 +1,0 @@
--------------------------
-clojure.core/hash-set
-([] [& keys])
-  Returns a new hash set with supplied keys.

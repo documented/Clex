@@ -1,4 +1,0 @@
--------------------------
-clojure.core/string?
-([x])
-  Return true if x is a String

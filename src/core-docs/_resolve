@@ -1,4 +1,0 @@
--------------------------
-clojure.core/resolve
-([sym])
-  same as (ns-resolve *ns* symbol)

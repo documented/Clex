@@ -1,4 +1,0 @@
--------------------------
-clojure.core/ints
-([xs])
-  Casts to int[]

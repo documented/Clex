@@ -1,4 +1,0 @@
--------------------------
-clojure.core/pr-str
-([& xs])
-  pr to a string, returning it

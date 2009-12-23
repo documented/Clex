@@ -1,4 +1,0 @@
--------------------------
-clojure.core/number?
-([x])
-  Returns true if x is a Number

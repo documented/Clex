@@ -1,4 +1,0 @@
--------------------------
-clojure.core/float-array
-([size-or-seq] [size init-val-or-seq])
-  Creates an array of floats

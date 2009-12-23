@@ -1,4 +1,0 @@
--------------------------
-clojure.core/namespace
-([x])
-  Returns the namespace String of a symbol or keyword, or nil if not present.

@@ -1,4 +1,0 @@
--------------------------
-clojure.core/coll?
-([x])
-  Returns true if x implements IPersistentCollection

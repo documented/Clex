@@ -1,4 +1,0 @@
--------------------------
-clojure.core/int
-([x])
-  Coerce to int

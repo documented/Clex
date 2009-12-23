@@ -1,4 +1,0 @@
--------------------------
-clojure.core/quot
-([num div])
-  quot[ient] of dividing numerator by denominator.

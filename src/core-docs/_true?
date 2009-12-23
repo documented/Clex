@@ -1,4 +1,0 @@
--------------------------
-clojure.core/true?
-([x])
-  Returns true if x is the value true, false otherwise.

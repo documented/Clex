@@ -1,4 +1,0 @@
--------------------------
-clojure.core/array-map
-([] [& keyvals])
-  Constructs an array-map.

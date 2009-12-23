@@ -1,4 +1,0 @@
--------------------------
-clojure.core/ref-min-history
-([ref] [ref n])
-  Gets the min-history of a ref, or sets it and returns the ref

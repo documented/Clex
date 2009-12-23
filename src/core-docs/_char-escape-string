@@ -1,4 +1,0 @@
--------------------------
-clojure.core/char-escape-string
-nil
-  Returns escape string for char or nil if none

@@ -1,4 +1,0 @@
--------------------------
-clojure.core/*ns*
-nil
-  A clojure.lang.Namespace object representing the current namespace.

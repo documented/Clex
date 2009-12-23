@@ -1,4 +1,0 @@
--------------------------
-clojure.core/chunked-seq?
-([s])
-  nil

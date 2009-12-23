@@ -1,4 +1,0 @@
--------------------------
-clojure.core/file-seq
-([dir])
-  A tree seq on java.io.Files

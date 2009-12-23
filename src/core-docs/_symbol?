@@ -1,4 +1,0 @@
--------------------------
-clojure.core/symbol?
-([x])
-  Return true if x is a Symbol

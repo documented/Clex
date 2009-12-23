@@ -1,4 +1,0 @@
--------------------------
-clojure.core/chunk-next
-([s])
-  nil

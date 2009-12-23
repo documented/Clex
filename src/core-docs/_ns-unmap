@@ -1,4 +1,0 @@
--------------------------
-clojure.core/ns-unmap
-([ns sym])
-  Removes the mappings for the symbol from the namespace.

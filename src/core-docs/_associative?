@@ -1,4 +1,0 @@
--------------------------
-clojure.core/associative?
-([coll])
-  Returns true if coll implements Associative

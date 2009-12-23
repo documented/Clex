@@ -1,4 +1,0 @@
--------------------------
-clojure.core/future?
-([x])
-  Returns true if x is a future

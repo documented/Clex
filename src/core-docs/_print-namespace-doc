@@ -1,4 +1,0 @@
--------------------------
-clojure.core/print-namespace-doc
-([nspace])
-  Print the documentation string of a Namespace.

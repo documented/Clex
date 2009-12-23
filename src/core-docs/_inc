@@ -1,4 +1,0 @@
--------------------------
-clojure.core/inc
-([x])
-  Returns a number one greater than num.

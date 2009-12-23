@@ -1,4 +1,0 @@
--------------------------
-clojure.core/val
-([e])
-  Returns the value in the map entry.

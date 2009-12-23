@@ -1,4 +1,0 @@
--------------------------
-clojure.core/keyword?
-([x])
-  Return true if x is a Keyword

@@ -1,4 +1,0 @@
--------------------------
-clojure.core/byte
-([x])
-  Coerce to byte
