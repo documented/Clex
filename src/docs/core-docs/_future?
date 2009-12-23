@@ -1,0 +1,8 @@
+###future?###
+
+> *clojure.core/future?*
+> 
+>     :::clojure
+>     ([x])
+> 
+>   Returns true if x is a future

@@ -1,0 +1,8 @@
+###make-hierarchy###
+
+> *clojure.core/make-hierarchy*
+> 
+>     :::clojure
+>     ([])
+> 
+>   Creates a hierarchy object for use with derive, isa? etc.

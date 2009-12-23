@@ -1,0 +1,12 @@
+<html><head><link href="pygments.css" rel="stylesheet" type="text/css" /></head><body><h3>send-off</h3>
+<blockquote>
+<p><em>clojure.core/send-off</em></p>
+<div class="codehilite"><pre><span class="p">([</span><span class="nv">a</span> <span class="nv">f</span> <span class="nv">&amp;</span> <span class="nv">args</span><span class="p">])</span>
+</pre></div>
+
+
+<p>Dispatch a potentially blocking action to an agent. Returns the
+  agent immediately. Subsequently, in a separate thread, the state of
+  the agent will be set to the value of:</p>
+<p>(apply action-fn state-of-agent args)</p>
+</blockquote></body></html>

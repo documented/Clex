@@ -1,0 +1,8 @@
+###integer?###
+
+> *clojure.core/integer?*
+> 
+>     :::clojure
+>     ([n])
+> 
+>   Returns true if n is an integer

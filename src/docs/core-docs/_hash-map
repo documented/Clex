@@ -1,0 +1,9 @@
+###hash-map###
+
+> *clojure.core/hash-map*
+> 
+>     :::clojure
+>     ([] [& keyvals])
+> 
+>   keyval => key val
+>   Returns a new hash map with supplied mappings.

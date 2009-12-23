@@ -1,0 +1,8 @@
+###sorted?###
+
+> *clojure.core/sorted?*
+> 
+>     :::clojure
+>     ([coll])
+> 
+>   Returns true if coll implements Sorted

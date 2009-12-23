@@ -1,0 +1,11 @@
+<html><head><link href="pygments.css" rel="stylesheet" type="text/css" /></head><body><h3>partial</h3>
+<blockquote>
+<p><em>clojure.core/partial</em></p>
+<div class="codehilite"><pre><span class="p">([</span><span class="nv">f</span> <span class="nv">arg1</span><span class="p">]</span> <span class="p">[</span><span class="nv">f</span> <span class="nv">arg1</span> <span class="nv">arg2</span><span class="p">]</span> <span class="p">[</span><span class="nv">f</span> <span class="nv">arg1</span> <span class="nv">arg2</span> <span class="nv">arg3</span><span class="p">]</span> <span class="p">[</span><span class="nv">f</span> <span class="nv">arg1</span> <span class="nv">arg2</span> <span class="nv">arg3</span> <span class="nv">&amp;</span> <span class="nv">more</span><span class="p">])</span>
+</pre></div>
+
+
+<p>Takes a function f and fewer than the normal arguments to f, and
+  returns a fn that takes a variable number of additional args. When
+  called, the returned function calls f with args + additional args.</p>
+</blockquote></body></html>

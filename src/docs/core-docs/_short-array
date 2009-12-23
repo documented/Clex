@@ -1,0 +1,8 @@
+###short-array###
+
+> *clojure.core/short-array*
+> 
+>     :::clojure
+>     ([size-or-seq] [size init-val-or-seq])
+> 
+>   Creates an array of shorts

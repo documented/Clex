@@ -1,0 +1,13 @@
+<html><head><link href="pygments.css" rel="stylesheet" type="text/css" /></head><body><h3>pmap</h3>
+<blockquote>
+<p><em>clojure.core/pmap</em></p>
+<div class="codehilite"><pre><span class="p">([</span><span class="nv">f</span> <span class="nv">coll</span><span class="p">]</span> <span class="p">[</span><span class="nv">f</span> <span class="nv">coll</span> <span class="nv">&amp;</span> <span class="nv">colls</span><span class="p">])</span>
+</pre></div>
+
+
+<p>Like map, except f is applied in parallel. Semi-lazy in that the
+  parallel computation stays ahead of the consumption, but doesn't
+  realize the entire result unless required. Only useful for
+  computationally intensive functions where the time of f dominates
+  the coordination overhead.</p>
+</blockquote></body></html>

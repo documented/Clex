@@ -1,0 +1,8 @@
+###chunk-cons###
+
+> *clojure.core/chunk-cons*
+> 
+>     :::clojure
+>     ([chunk rest])
+> 
+>   

@@ -1,0 +1,8 @@
+###floats###
+
+> *clojure.core/floats*
+> 
+>     :::clojure
+>     ([xs])
+> 
+>   Casts to float[]

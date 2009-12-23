@@ -1,0 +1,14 @@
+<html><head><link href="pygments.css" rel="stylesheet" type="text/css" /></head><body><h3>seque</h3>
+<blockquote>
+<p><em>clojure.core/seque</em></p>
+<div class="codehilite"><pre><span class="p">([</span><span class="nv">s</span><span class="p">]</span> <span class="p">[</span><span class="nv">n-or-q</span> <span class="nv">s</span><span class="p">])</span>
+</pre></div>
+
+
+<p>Creates a queued seq on another (presumably lazy) seq s. The queued
+  seq will produce a concrete seq in the background, and can get up to
+  n items ahead of the consumer. n-or-q can be an integer n buffer
+  size, or an instance of java.util.concurrent BlockingQueue. Note
+  that reading from a seque can block if the reader gets ahead of the
+  producer.</p>
+</blockquote></body></html>

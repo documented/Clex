@@ -1,0 +1,8 @@
+###future-cancel###
+
+> *clojure.core/future-cancel*
+> 
+>     :::clojure
+>     ([f])
+> 
+>   Cancels the future, if possible.

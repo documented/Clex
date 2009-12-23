@@ -1,0 +1,8 @@
+###vector###
+
+> *clojure.core/vector*
+> 
+>     :::clojure
+>     ([] [& args])
+> 
+>   Creates a new vector containing the args.

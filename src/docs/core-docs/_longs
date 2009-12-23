@@ -1,0 +1,8 @@
+###longs###
+
+> *clojure.core/longs*
+> 
+>     :::clojure
+>     ([xs])
+> 
+>   Casts to long[]

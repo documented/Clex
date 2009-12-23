@@ -1,0 +1,8 @@
+###shorts###
+
+> *clojure.core/shorts*
+> 
+>     :::clojure
+>     ([xs])
+> 
+>   Casts to shorts[]

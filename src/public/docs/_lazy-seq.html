@@ -1,0 +1,13 @@
+<html><head><link href="pygments.css" rel="stylesheet" type="text/css" /></head><body><h3>lazy-seq</h3>
+<blockquote>
+<p><em>clojure.core/lazy-seq</em></p>
+<div class="codehilite"><pre><span class="p">([</span><span class="nv">&amp;</span> <span class="nv">body</span><span class="p">])</span>
+</pre></div>
+
+
+<p>Macro
+  Takes a body of expressions that returns an ISeq or nil, and yields
+  a Seqable object that will invoke the body only the first time seq
+  is called, and will cache the result and return it on all subsequent
+  seq calls.</p>
+</blockquote></body></html>

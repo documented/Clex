@@ -1,0 +1,21 @@
+<html><head><link href="pygments.css" rel="stylesheet" type="text/css" /></head><body><h3>push-thread-bindings</h3>
+<blockquote>
+<p><em>clojure.core/push-thread-bindings</em></p>
+<div class="codehilite"><pre><span class="p">([</span><span class="nv">bindings</span><span class="p">])</span>
+</pre></div>
+
+
+<p>WARNING: This is a low-level function. Prefer high-level macros like
+  binding where ever possible.</p>
+<p>Takes a map of Var/value pairs. Binds each Var to the associated value for
+  the current thread. Each call <em>MUST</em> be accompanied by a matching call to
+  pop-thread-bindings wrapped in a try-finally!</p>
+<div class="codehilite"><pre>  (push-thread-bindings bindings)
+  (try
+    ...
+    (finally
+      (pop-thread-bindings)))
+</pre></div>
+
+
+</blockquote></body></html>

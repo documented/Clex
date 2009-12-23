@@ -1,0 +1,13 @@
+<html><head><link href="pygments.css" rel="stylesheet" type="text/css" /></head><body><h3>partition</h3>
+<blockquote>
+<p><em>clojure.core/partition</em></p>
+<div class="codehilite"><pre><span class="p">([</span><span class="nv">n</span> <span class="nv">coll</span><span class="p">]</span> <span class="p">[</span><span class="nv">n</span> <span class="nv">step</span> <span class="nv">coll</span><span class="p">]</span> <span class="p">[</span><span class="nv">n</span> <span class="nv">step</span> <span class="nv">pad</span> <span class="nv">coll</span><span class="p">])</span>
+</pre></div>
+
+
+<p>Returns a lazy sequence of lists of n items each, at offsets step
+  apart. If step is not supplied, defaults to n, i.e. the partitions
+  do not overlap. If a pad collection is supplied, use its elements as
+  necessary to complete last partition upto n items. In case there are
+  not enough padding elements, return a partition with less than n items.</p>
+</blockquote></body></html>

@@ -1,0 +1,8 @@
+###chunk-buffer###
+
+> *clojure.core/chunk-buffer*
+> 
+>     :::clojure
+>     ([capacity])
+> 
+>   

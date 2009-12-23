@@ -1,0 +1,11 @@
+<html><head><link href="pygments.css" rel="stylesheet" type="text/css" /></head><body><h3>with-bindings*</h3>
+<blockquote>
+<p><em>clojure.core/with-bindings</em>*</p>
+<div class="codehilite"><pre><span class="p">([</span><span class="nv">binding-map</span> <span class="nv">f</span> <span class="nv">&amp;</span> <span class="nv">args</span><span class="p">])</span>
+</pre></div>
+
+
+<p>Takes a map of Var/value pairs. Installs for the given Vars the associated
+  values as thread-local bindings. Then calls f with the supplied arguments.
+  Pops the installed bindings after f returned. Returns whatever f returns.</p>
+</blockquote></body></html>

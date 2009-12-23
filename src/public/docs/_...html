@@ -1,0 +1,17 @@
+<html><head><link href="pygments.css" rel="stylesheet" type="text/css" /></head><body><h3>..</h3>
+<blockquote>
+<p><em>clojure.core/..</em></p>
+<div class="codehilite"><pre><span class="p">([</span><span class="nv">x</span> <span class="nv">form</span><span class="p">]</span> <span class="p">[</span><span class="nv">x</span> <span class="nv">form</span> <span class="nv">&amp;</span> <span class="nv">more</span><span class="p">])</span>
+</pre></div>
+
+
+<p>Macro
+  form =&gt; fieldName-symbol or (instanceMethodName-symbol args*)</p>
+<p>Expands into a member access (.) of the first member on the first
+  argument, followed by the next member on the result, etc. For
+  instance:</p>
+<p>(.. System (getProperties) (get "os.name"))</p>
+<p>expands to:</p>
+<p>(. (. System (getProperties)) (get "os.name"))</p>
+<p>but is easier to write, read, and understand.</p>
+</blockquote></body></html>

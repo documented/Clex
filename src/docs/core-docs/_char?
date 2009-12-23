@@ -1,0 +1,8 @@
+###char?###
+
+> *clojure.core/char?*
+> 
+>     :::clojure
+>     ([x])
+> 
+>   Return true if x is a Character

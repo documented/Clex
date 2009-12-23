@@ -1,0 +1,8 @@
+###mod###
+
+> *clojure.core/mod*
+> 
+>     :::clojure
+>     ([num div])
+> 
+>   Modulus of num and div. Truncates toward negative infinity.

@@ -1,0 +1,8 @@
+###resolve###
+
+> *clojure.core/resolve*
+> 
+>     :::clojure
+>     ([sym])
+> 
+>   same as (ns-resolve *ns* symbol)

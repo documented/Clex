@@ -1,0 +1,11 @@
+<html><head><link href="pygments.css" rel="stylesheet" type="text/css" /></head><body><h3>ensure</h3>
+<blockquote>
+<p><em>clojure.core/ensure</em></p>
+<div class="codehilite"><pre><span class="p">([</span><span class="nv">ref</span><span class="p">])</span>
+</pre></div>
+
+
+<p>Must be called in a transaction. Protects the ref from modification
+  by other transactions.  Returns the in-transaction-value of
+  ref. Allows for more concurrency than (ref-set ref @ref)</p>
+</blockquote></body></html>

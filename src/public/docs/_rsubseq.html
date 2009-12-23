@@ -1,0 +1,13 @@
+<html><head><link href="pygments.css" rel="stylesheet" type="text/css" /></head><body><h3>rsubseq</h3>
+<blockquote>
+<p><em>clojure.core/rsubseq</em></p>
+<div class="codehilite"><pre><span class="p">([</span><span class="nv">sc</span> <span class="nv">test</span> <span class="nv">key</span><span class="p">]</span> <span class="p">[</span><span class="nv">sc</span> <span class="nv">start-test</span> <span class="nv">start-key</span> <span class="nv">end-test</span> <span class="nv">end-key</span><span class="p">])</span>
+</pre></div>
+
+
+<p>sc must be a sorted collection, test(s) one of &lt;, &lt;=, &gt; or</p>
+<blockquote>
+<p>=. Returns a reverse seq of those entries with keys ek for
+  which (test (.. sc comparator (compare ek key)) 0) is true</p>
+</blockquote>
+</blockquote></body></html>

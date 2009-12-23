@@ -1,0 +1,8 @@
+###drop-last###
+
+> *clojure.core/drop-last*
+> 
+>     :::clojure
+>     ([s] [n s])
+> 
+>   Return a lazy sequence of all but the last n (default 1) items in coll

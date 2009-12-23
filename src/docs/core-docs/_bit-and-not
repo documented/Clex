@@ -1,0 +1,8 @@
+###bit-and-not###
+
+> *clojure.core/bit-and-not*
+> 
+>     :::clojure
+>     ([x y])
+> 
+>   Bitwise and with complement

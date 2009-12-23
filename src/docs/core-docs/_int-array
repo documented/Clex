@@ -1,0 +1,8 @@
+###int-array###
+
+> *clojure.core/int-array*
+> 
+>     :::clojure
+>     ([size-or-seq] [size init-val-or-seq])
+> 
+>   Creates an array of ints

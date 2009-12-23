@@ -1,0 +1,8 @@
+###min###
+
+> *clojure.core/min*
+> 
+>     :::clojure
+>     ([x] [x y] [x y & more])
+> 
+>   Returns the least of the nums.

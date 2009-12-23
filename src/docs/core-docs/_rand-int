@@ -1,0 +1,8 @@
+###rand-int###
+
+> *clojure.core/rand-int*
+> 
+>     :::clojure
+>     ([n])
+> 
+>   Returns a random integer between 0 (inclusive) and n (exclusive).

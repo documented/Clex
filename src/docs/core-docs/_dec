@@ -1,0 +1,8 @@
+###dec###
+
+> *clojure.core/dec*
+> 
+>     :::clojure
+>     ([x])
+> 
+>   Returns a number one less than num.

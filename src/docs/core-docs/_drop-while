@@ -1,0 +1,9 @@
+###drop-while###
+
+> *clojure.core/drop-while*
+> 
+>     :::clojure
+>     ([pred coll])
+> 
+>   Returns a lazy sequence of the items in coll starting from the first
+>   item for which (pred item) returns nil.

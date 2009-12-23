@@ -1,0 +1,8 @@
+###proxy-name###
+
+> *clojure.core/proxy-name*
+> 
+>     :::clojure
+>     ([super interfaces])
+> 
+>   

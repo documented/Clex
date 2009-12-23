@@ -1,0 +1,8 @@
+###ns-imports###
+
+> *clojure.core/ns-imports*
+> 
+>     :::clojure
+>     ([ns])
+> 
+>   Returns a map of the import mappings for the namespace.

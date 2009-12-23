@@ -1,0 +1,8 @@
+###printf###
+
+> *clojure.core/printf*
+> 
+>     :::clojure
+>     ([fmt & args])
+> 
+>   Prints formatted output, as per format

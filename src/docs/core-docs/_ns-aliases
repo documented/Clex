@@ -1,0 +1,8 @@
+###ns-aliases###
+
+> *clojure.core/ns-aliases*
+> 
+>     :::clojure
+>     ([ns])
+> 
+>   Returns a map of the aliases for the namespace.

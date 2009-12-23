@@ -1,0 +1,27 @@
+<html><head><link href="pygments.css" rel="stylesheet" type="text/css" /></head><body><h3>gen-interface</h3>
+<blockquote>
+<p><em>clojure.core/gen-interface</em></p>
+<div class="codehilite"><pre><span class="p">([</span><span class="nv">&amp;</span> <span class="nv">options</span><span class="p">])</span>
+</pre></div>
+
+
+<p>Macro
+  When compiling, generates compiled bytecode for an interface with
+  the given package-qualified :name (which, as all names in these
+  parameters, can be a string or symbol), and writes the .class file
+  to the <em>compile-path</em> directory.  When not compiling, does nothing.</p>
+<p>In all subsequent sections taking types, the primitive types can be
+  referred to by their Java names (int, float etc), and classes in the
+  java.lang package can be used without a package qualifier. All other
+  classes must be fully qualified.</p>
+<p>Options should be a set of key/value pairs, all except for :name are
+  optional:</p>
+<p>:name aname</p>
+<p>The package-qualified name of the class to be generated</p>
+<p>:extends [interface ...]</p>
+<p>One or more interfaces, which will be extended by this interface.</p>
+<p>:methods [ [name [param-types] return-type], ...]</p>
+<p>This parameter is used to specify the signatures of the methods of
+  the generated interface.  Do not repeat superinterface signatures
+  here.</p>
+</blockquote></body></html>

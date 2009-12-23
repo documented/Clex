@@ -1,0 +1,8 @@
+###vec###
+
+> *clojure.core/vec*
+> 
+>     :::clojure
+>     ([coll])
+> 
+>   Creates a new vector containing the contents of coll.

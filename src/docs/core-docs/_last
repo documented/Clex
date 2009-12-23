@@ -1,0 +1,8 @@
+###last###
+
+> *clojure.core/last*
+> 
+>     :::clojure
+>     ([coll])
+> 
+>   Return the last item in coll, in linear time

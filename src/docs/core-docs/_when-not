@@ -1,0 +1,9 @@
+###when-not###
+
+> *clojure.core/when-not*
+> 
+>     :::clojure
+>     ([test & body])
+> 
+> Macro
+>   Evaluates test. If logical false, evaluates body in an implicit do.

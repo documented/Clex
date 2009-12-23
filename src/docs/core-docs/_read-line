@@ -1,0 +1,8 @@
+###read-line###
+
+> *clojure.core/read-line*
+> 
+>     :::clojure
+>     ([])
+> 
+>   Reads the next line from stream that is the current value of *in* .

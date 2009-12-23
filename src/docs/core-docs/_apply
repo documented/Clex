@@ -1,0 +1,8 @@
+###apply###
+
+> *clojure.core/apply*
+> 
+>     :::clojure
+>     ([f args* argseq])
+> 
+>   Applies fn f to the argument list formed by prepending args to argseq.

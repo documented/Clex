@@ -1,0 +1,8 @@
+###print-ctor###
+
+> *clojure.core/print-ctor*
+> 
+>     :::clojure
+>     ([o print-args w])
+> 
+>   

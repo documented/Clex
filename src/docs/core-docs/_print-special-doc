@@ -1,0 +1,8 @@
+###print-special-doc###
+
+> *clojure.core/print-special-doc*
+> 
+>     :::clojure
+>     ([name type anchor])
+> 
+>   

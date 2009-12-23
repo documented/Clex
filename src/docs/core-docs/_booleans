@@ -1,0 +1,8 @@
+###booleans###
+
+> *clojure.core/booleans*
+> 
+>     :::clojure
+>     ([xs])
+> 
+>   Casts to boolean[]

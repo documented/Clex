@@ -1,0 +1,8 @@
+###filter###
+
+> *clojure.core/filter*
+> 
+>     :::clojure
+>     ([pred coll])
+> 
+>   

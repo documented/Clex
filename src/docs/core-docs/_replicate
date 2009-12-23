@@ -1,0 +1,8 @@
+###replicate###
+
+> *clojure.core/replicate*
+> 
+>     :::clojure
+>     ([n x])
+> 
+>   Returns a lazy seq of n xs.

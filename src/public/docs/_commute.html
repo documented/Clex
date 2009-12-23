@@ -1,0 +1,17 @@
+<html><head><link href="pygments.css" rel="stylesheet" type="text/css" /></head><body><h3>commute</h3>
+<blockquote>
+<p><em>clojure.core/commute</em></p>
+<div class="codehilite"><pre><span class="p">([</span><span class="nv">ref</span> <span class="nv">fun</span> <span class="nv">&amp;</span> <span class="nv">args</span><span class="p">])</span>
+</pre></div>
+
+
+<p>Must be called in a transaction. Sets the in-transaction-value of
+  ref to:</p>
+<p>(apply fun in-transaction-value-of-ref args)</p>
+<p>and returns the in-transaction-value of ref.</p>
+<p>At the commit point of the transaction, sets the value of ref to be:</p>
+<p>(apply fun most-recently-committed-value-of-ref args)</p>
+<p>Thus fun should be commutative, or, failing that, you must accept
+  last-one-in-wins behavior.  commute allows for more concurrency than
+  ref-set.</p>
+</blockquote></body></html>

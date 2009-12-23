@@ -1,0 +1,8 @@
+###val###
+
+> *clojure.core/val*
+> 
+>     :::clojure
+>     ([e])
+> 
+>   Returns the value in the map entry.

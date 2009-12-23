@@ -1,0 +1,8 @@
+###chars###
+
+> *clojure.core/chars*
+> 
+>     :::clojure
+>     ([xs])
+> 
+>   Casts to chars[]

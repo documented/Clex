@@ -1,0 +1,8 @@
+###not=###
+
+> *clojure.core/not=*
+> 
+>     :::clojure
+>     ([x] [x y] [x y & more])
+> 
+>   Same as (not (= obj1 obj2))
