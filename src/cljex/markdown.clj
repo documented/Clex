@@ -1,4 +1,7 @@
 (ns cljex.markdown
-  (:use (clojure.contrib str-utils shell-out)))
+  [:use compojure,
+   clojure.contrib.duck-streams,
+   clojure.contrib.str-utils,
+   clojure.contrib.shell-out])
 
-(defn markdown-to-html [file])
+;; pygmentize -S manni -f html > pygments.css
