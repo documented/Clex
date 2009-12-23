@@ -1,4 +1,4 @@
-(ns cljex.view
+(ns cljex.view.application
   (:use (compojure.html gen page-helpers)
         (clojure.contrib pprint)
         (config)))
