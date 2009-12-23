@@ -46,18 +46,7 @@ following format:
     cljex/
        \-> src/
             \-> docs/
-                 \-> a/
-                 |    \-> accessor.markdown
-                 |    |-> ...
-                 |    |-> ...
-                 |
-                 \-> b/
-                 |    \-> bases.markdown
-                 |    |-> ...
-                 |    |-> ...
-                 |
-                 \-> ...
-                 \-> ...
+                 \-> _->>.text
 
 To contribute an example, simply fork this project on `github`
 (where else?), observe the proper **formatting** for examples, and get
@@ -68,16 +57,16 @@ down to business.
 The formatting of these markdown documents is very
 straight-forward.  An example file looks like this:
 
-    ### take ###
+Note that you can use `#!clojure` to show line numbers.  Or you can use
+`:::clojure` for no line numbers.
 
-    > *clojure.core/take*
-    > `([n coll])`    
-    > Returns a lazy sequence of the first n items in coll, or all items if
-    > there are fewer than n. 
-
-        #!clojure
-        (take 5 (range 0 10))
-        ;=> (0 1 2 3 4)
+    #!clojure
+    (take 5 (range 0 10))
+    ;=> (0 1 2 3 4)
+        
+    :::clojure
+    (take 5 (range 0 10))
+    ;=> (0 1 2 3 4)
 
 For many of Clojure's forms there are multiple examples one could
 give to flesh out the possibilities and possible use-cases for a
