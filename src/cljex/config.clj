@@ -12,6 +12,6 @@
 (def *public-dir* (file-str *project-root* "/src/public/"))
 
 (def *rel-project-root*
-     (-> "user.dir" System/getProperty File. .getParentFile .getParentFile))
+     (-> "user.dir" System/getProperty java.io.File. .getParentFile .getParentFile))
 
 (def *markdown-command* "/usr/local/bin/markdown")
