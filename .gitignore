@@ -1,8 +1,7 @@
+.#*
 pom-generated.xml
 Manifest.txt
 *.jar
 .DS_Store
 *jar
 lib/*.jar
-todo.html
-todo.org
