@@ -65,3 +65,11 @@
            [:html
             [:head (include-css "pygments.css")]
             [:body (str (sh *markdown-command* (str f) "-x" "codehilite"))]]))))
+
+(defn compose-examples
+  []
+  (let [examples (enumerate-files *examples-dir*)
+        core-docs (enumerate-files *core-docs*)]
+    ))
+
+;; Create two sets and do an intersection
