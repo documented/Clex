@@ -1,12 +1,12 @@
-### $NAME ###
+#### Example Heading ####
 
-> *clojure.core/$NAME*
->
->     #!clojure
->     ([n collection])
->
->  > $(doc name)-output-goes-here
+##### Example Sub-heading #####
 
     #!clojure
-    $example-goes-here
+    (println "This example has line numbers.)
+
+##### Example Sub-heading 2 #####
+    
+    :::clojure
+    (println "This example doesn't have line numbers.")
 

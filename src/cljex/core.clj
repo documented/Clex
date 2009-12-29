@@ -8,11 +8,13 @@
   [:import java.io.File])
 
 ;; Output final print-markdown-doc + examples
-(defn docs-index [path-to-files]
+(defn docs-index []
   "Creates links to all of the docs located in public/docs/*"
   (html (map #(link-to %)
              (map #(str %)
-                  (file-seq (java.io.File. path-to-files))))))
+                  (file-seq (java.io.File. *doc-output-dir*))))))
 
+
+(defn -main [])
 ;; TODO ;;
-; - Create a function to add the examples in docs/examples/
+                                        ; - Create a function to add the examples in docs/examples/

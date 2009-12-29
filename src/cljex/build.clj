@@ -35,32 +35,32 @@
     (doseq [s docs]
       (let [filename (build-filename s)]
         (with-out-writer
-          (file-str "/home/defn/git/cljex/src/docs/core-docs/" filename)
+          (file-str *core-docs* filename)
           (print-markdown-doc s))))))
 
 (defn apply-markdown-and-html
   []
-  (doseq [f (enumerate-files "/home/defn/git/cljex/src/docs/core-docs/")]
+  (doseq [f (enumerate-files *core-docs*)]
     (spit (java.io.File. (str f ".html")) (html
            [:html
             [:head (include-css "pygments.css")]
             [:body (str (sh *markdown-command* (str f) "-x" "codehilite"))]]))))
 
 (defn enumerate-files
-  "Enumerates all of the files located under [path]"
+  "Enumerates all of the files located under [path]."
   [path]
-  (file-seq (java.io.File. path)))
+  (file-seq path))
 
 (defn apply-markdown
   "Turns all of the core-docs into html files"
   []
-  (doseq [f (enumerate-files "/home/defn/git/cljex/src/docs/core-docs/")]
+  (doseq [f (file-seq *core-docs*)]
     (sh *markdown-command* (str f)
         "-f" (str f ".html") "-x" "codehilite")))
 
 (defn apply-markdown-and-html
   []
-  (doseq [f (enumerate-files "/home/defn/git/cljex/src/docs/core-docs/")]
+  (doseq [f (file-seq *core-docs*)]
     (spit (java.io.File. (str f ".html")) (html
            [:html
             [:head (include-css "pygments.css")]
@@ -68,8 +68,10 @@
 
 (defn compose-examples
   []
-  (let [examples (enumerate-files *examples-dir*)
-        core-docs (enumerate-files *core-docs*)]
+  (let [examples (file-seq *examples-dir*)
+        core-docs (file-seq *core-docs*)]
     ))
 
 ;; Create two sets and do an intersection
+
+;; remember: (zipmap [:a :b :c] [1 2 3])

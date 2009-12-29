@@ -1,11 +1,11 @@
 #!/bin/bash
 
-find src/docs -name '*.markdown' | while read FILENAME ; do 
-    name=$(basename -s '.markdown' $FILENAME)
-    outputname="src/public/docs/${name}.html"
-    markdown $FILENAME -f $outputname -x codehilite
-    echo "Processing ${name}..."
-done
+# find src/docs -name '*.markdown' | while read FILENAME ; do 
+#     name=$(basename -s '.markdown' $FILENAME)
+#     outputname="src/public/docs/${name}.html"
+#     markdown $FILENAME -f $outputname -x codehilite
+#     echo "Processing ${name}..."
+# done
 
 echo "Running 'lein deps'"
 lein deps
