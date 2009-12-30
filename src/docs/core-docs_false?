@@ -1,8 +1,0 @@
-###false?###
-
-> *clojure.core/false?*
-> 
->     :::clojure
->     ([x])
-> 
->   Returns true if x is the value false, false otherwise.

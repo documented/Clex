@@ -1,8 +1,0 @@
-###+###
-
-> *clojure.core/+*
-> 
->     :::clojure
->     ([] [x] [x y] [x y & more])
-> 
->   Returns the sum of nums. (+) returns 0.

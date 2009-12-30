@@ -1,8 +1,0 @@
-###byte###
-
-> *clojure.core/byte*
-> 
->     :::clojure
->     ([x])
-> 
->   Coerce to byte

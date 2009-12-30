@@ -1,8 +1,0 @@
-###var-get###
-
-> *clojure.core/var-get*
-> 
->     :::clojure
->     ([x])
-> 
->   Gets the value in the var object

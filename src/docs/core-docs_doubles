@@ -1,8 +1,0 @@
-###doubles###
-
-> *clojure.core/doubles*
-> 
->     :::clojure
->     ([xs])
-> 
->   Casts to double[]

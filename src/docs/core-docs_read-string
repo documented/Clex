@@ -1,8 +1,0 @@
-###read-string###
-
-> *clojure.core/read-string*
-> 
->     :::clojure
->     ([s])
-> 
->   Reads one object from the string s

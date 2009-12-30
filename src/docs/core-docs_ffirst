@@ -1,8 +1,0 @@
-###ffirst###
-
-> *clojure.core/ffirst*
-> 
->     :::clojure
->     ([x])
-> 
->   Same as (first (first x))

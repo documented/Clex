@@ -1,8 +1,0 @@
-###clojure-version###
-
-> *clojure.core/clojure-version*
-> 
->     :::clojure
->     ([])
-> 
->   Returns clojure version as a printable string.

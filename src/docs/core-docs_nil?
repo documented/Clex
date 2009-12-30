@@ -1,8 +1,0 @@
-###nil?###
-
-> *clojure.core/nil?*
-> 
->     :::clojure
->     ([x])
-> 
->   Returns true if x is nil, false otherwise.

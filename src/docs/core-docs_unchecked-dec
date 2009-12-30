@@ -1,9 +1,0 @@
-###unchecked-dec###
-
-> *clojure.core/unchecked-dec*
-> 
->     :::clojure
->     ([x])
-> 
->   Returns a number one less than x, an int or long.
->   Note - uses a primitive operator subject to overflow.

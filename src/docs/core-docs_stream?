@@ -1,8 +1,0 @@
-###stream?###
-
-> *clojure.core/stream?*
-> 
->     :::clojure
->     ([x])
-> 
->   Returns true if x is an instance of Stream

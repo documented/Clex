@@ -1,8 +1,0 @@
-###ns-name###
-
-> *clojure.core/ns-name*
-> 
->     :::clojure
->     ([ns])
-> 
->   Returns the name of the namespace, a symbol.

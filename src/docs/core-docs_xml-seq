@@ -1,8 +1,0 @@
-###xml-seq###
-
-> *clojure.core/xml-seq*
-> 
->     :::clojure
->     ([root])
-> 
->   A tree seq on the xml elements as per xml/parse

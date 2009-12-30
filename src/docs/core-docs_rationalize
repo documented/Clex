@@ -1,8 +1,0 @@
-###rationalize###
-
-> *clojure.core/rationalize*
-> 
->     :::clojure
->     ([num])
-> 
->   returns the rational value of num

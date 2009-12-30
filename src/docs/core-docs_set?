@@ -1,8 +1,0 @@
-###set?###
-
-> *clojure.core/set?*
-> 
->     :::clojure
->     ([x])
-> 
->   Returns true if x implements IPersistentSet

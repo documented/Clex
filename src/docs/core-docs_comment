@@ -1,9 +1,0 @@
-###comment###
-
-> *clojure.core/comment*
-> 
->     :::clojure
->     ([& body])
-> 
-> Macro
->   Ignores body, yields nil

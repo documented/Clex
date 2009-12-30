@@ -1,8 +1,0 @@
-###sorted-set###
-
-> *clojure.core/sorted-set*
-> 
->     :::clojure
->     ([& keys])
-> 
->   Returns a new sorted set with supplied keys.

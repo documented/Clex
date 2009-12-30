@@ -1,8 +1,0 @@
-###ints###
-
-> *clojure.core/ints*
-> 
->     :::clojure
->     ([xs])
-> 
->   Casts to int[]

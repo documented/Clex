@@ -1,8 +1,0 @@
-###special-symbol?###
-
-> *clojure.core/special-symbol?*
-> 
->     :::clojure
->     ([s])
-> 
->   Returns true if s names a special form

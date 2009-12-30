@@ -1,8 +1,0 @@
-###not###
-
-> *clojure.core/not*
-> 
->     :::clojure
->     ([x])
-> 
->   Returns true if x is logical false, false otherwise.

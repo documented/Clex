@@ -1,8 +1,0 @@
-###reversible?###
-
-> *clojure.core/reversible?*
-> 
->     :::clojure
->     ([coll])
-> 
->   Returns true if coll implements Reversible

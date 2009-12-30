@@ -1,8 +1,0 @@
-###hash-set###
-
-> *clojure.core/hash-set*
-> 
->     :::clojure
->     ([] [& keys])
-> 
->   Returns a new hash set with supplied keys.

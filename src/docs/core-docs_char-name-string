@@ -1,8 +1,0 @@
-###char-name-string###
-
-> *clojure.core/char-name-string*
-> 
->     :::clojure
->     
-> 
->   Returns name string for char or nil if none

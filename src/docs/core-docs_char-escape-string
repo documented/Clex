@@ -1,8 +1,0 @@
-###char-escape-string###
-
-> *clojure.core/char-escape-string*
-> 
->     :::clojure
->     
-> 
->   Returns escape string for char or nil if none

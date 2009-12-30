@@ -1,8 +1,0 @@
-###bit-or###
-
-> *clojure.core/bit-or*
-> 
->     :::clojure
->     ([x y])
-> 
->   Bitwise or

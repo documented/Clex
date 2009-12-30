@@ -1,8 +1,0 @@
-###class###
-
-> *clojure.core/class*
-> 
->     :::clojure
->     ([x])
-> 
->   Returns the Class of x

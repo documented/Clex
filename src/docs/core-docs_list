@@ -1,8 +1,0 @@
-###list###
-
-> *clojure.core/list*
-> 
->     :::clojure
->     ([& items])
-> 
->   Creates a new list containing the items.

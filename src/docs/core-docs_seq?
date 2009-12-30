@@ -1,8 +1,0 @@
-###seq?###
-
-> *clojure.core/seq?*
-> 
->     :::clojure
->     ([x])
-> 
->   Return true if x implements ISeq

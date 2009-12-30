@@ -1,8 +1,0 @@
-###methods###
-
-> *clojure.core/methods*
-> 
->     :::clojure
->     ([multifn])
-> 
->   Given a multimethod, returns a map of dispatch values -> dispatch fns

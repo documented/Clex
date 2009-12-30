@@ -1,8 +1,0 @@
-###identical?###
-
-> *clojure.core/identical?*
-> 
->     :::clojure
->     ([x y])
-> 
->   Tests if 2 arguments are the same object

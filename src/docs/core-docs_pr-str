@@ -1,8 +1,0 @@
-###pr-str###
-
-> *clojure.core/pr-str*
-> 
->     :::clojure
->     ([& xs])
-> 
->   pr to a string, returning it

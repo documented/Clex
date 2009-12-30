@@ -1,8 +1,0 @@
-###long###
-
-> *clojure.core/long*
-> 
->     :::clojure
->     ([x])
-> 
->   Coerce to long

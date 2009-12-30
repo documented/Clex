@@ -1,8 +1,0 @@
-###int###
-
-> *clojure.core/int*
-> 
->     :::clojure
->     ([x])
-> 
->   Coerce to int

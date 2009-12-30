@@ -1,9 +1,0 @@
-###find-var###
-
-> *clojure.core/find-var*
-> 
->     :::clojure
->     ([sym])
-> 
->   Returns the global var named by the namespace-qualified symbol, or
->   nil if no var with that name.

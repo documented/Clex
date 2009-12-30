@@ -1,8 +1,0 @@
-###proxy-call-with-super###
-
-> *clojure.core/proxy-call-with-super*
-> 
->     :::clojure
->     ([call this meth])
-> 
->   

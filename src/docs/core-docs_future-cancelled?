@@ -1,8 +1,0 @@
-###future-cancelled?###
-
-> *clojure.core/future-cancelled?*
-> 
->     :::clojure
->     ([f])
-> 
->   Returns true if future f is cancelled

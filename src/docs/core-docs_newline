@@ -1,9 +1,0 @@
-###newline###
-
-> *clojure.core/newline*
-> 
->     :::clojure
->     ([])
-> 
->   Writes a newline to the output stream that is the current value of
->   *out*

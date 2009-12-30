@@ -1,8 +1,0 @@
-###zero?###
-
-> *clojure.core/zero?*
-> 
->     :::clojure
->     ([x])
-> 
->   Returns true if num is zero, else false

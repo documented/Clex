@@ -1,8 +1,0 @@
-###vector?###
-
-> *clojure.core/vector?*
-> 
->     :::clojure
->     ([x])
-> 
->   Return true if x implements IPersistentVector 

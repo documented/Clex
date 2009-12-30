@@ -1,8 +1,0 @@
-###var?###
-
-> *clojure.core/var?*
-> 
->     :::clojure
->     ([v])
-> 
->   Returns true if v is of type clojure.lang.Var

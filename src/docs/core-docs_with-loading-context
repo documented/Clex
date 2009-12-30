@@ -1,9 +1,0 @@
-###with-loading-context###
-
-> *clojure.core/with-loading-context*
-> 
->     :::clojure
->     ([& body])
-> 
-> Macro
->   

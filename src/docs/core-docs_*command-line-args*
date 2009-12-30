@@ -1,9 +1,0 @@
-###*command-line-args*###
-
-> *clojure.core/*command-line-args**
-> 
->     :::clojure
->     
-> 
->   A sequence of the supplied command line arguments, or nil if
->   none were supplied

@@ -1,8 +1,0 @@
-###max-key###
-
-> *clojure.core/max-key*
-> 
->     :::clojure
->     ([k x] [k x y] [k x y & more])
-> 
->   Returns the x for which (k x), a number, is greatest.

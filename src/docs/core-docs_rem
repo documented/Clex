@@ -1,8 +1,0 @@
-###rem###
-
-> *clojure.core/rem*
-> 
->     :::clojure
->     ([num div])
-> 
->   remainder of dividing numerator by denominator.

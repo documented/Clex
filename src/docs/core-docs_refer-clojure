@@ -1,9 +1,0 @@
-###refer-clojure###
-
-> *clojure.core/refer-clojure*
-> 
->     :::clojure
->     ([& filters])
-> 
-> Macro
->   Same as (refer 'clojure.core <filters>)

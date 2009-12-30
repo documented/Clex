@@ -1,8 +1,0 @@
-###remove-method###
-
-> *clojure.core/remove-method*
-> 
->     :::clojure
->     ([multifn dispatch-val])
-> 
->   Removes the method of multimethod associated	with dispatch-value.

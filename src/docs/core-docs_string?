@@ -1,8 +1,0 @@
-###string?###
-
-> *clojure.core/string?*
-> 
->     :::clojure
->     ([x])
-> 
->   Return true if x is a String

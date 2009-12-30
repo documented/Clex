@@ -1,8 +1,0 @@
-###char###
-
-> *clojure.core/char*
-> 
->     :::clojure
->     ([x])
-> 
->   Coerce to char

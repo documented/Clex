@@ -1,8 +1,0 @@
-###identity###
-
-> *clojure.core/identity*
-> 
->     :::clojure
->     ([x])
-> 
->   Returns its argument.

@@ -1,8 +1,0 @@
-###bit-set###
-
-> *clojure.core/bit-set*
-> 
->     :::clojure
->     ([x n])
-> 
->   Set bit at index n

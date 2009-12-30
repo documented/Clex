@@ -1,8 +1,0 @@
-###ns-map###
-
-> *clojure.core/ns-map*
-> 
->     :::clojure
->     ([ns])
-> 
->   Returns a map of all the mappings for the namespace.

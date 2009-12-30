@@ -1,8 +1,0 @@
-###decimal?###
-
-> *clojure.core/decimal?*
-> 
->     :::clojure
->     ([n])
-> 
->   Returns true if n is a BigDecimal

@@ -1,8 +1,0 @@
-###bases###
-
-> *clojure.core/bases*
-> 
->     :::clojure
->     ([c])
-> 
->   Returns the immediate superclass and direct interfaces of c, if any

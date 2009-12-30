@@ -1,9 +1,0 @@
-###defn-###
-
-> *clojure.core/defn-*
-> 
->     :::clojure
->     ([name & decls])
-> 
-> Macro
->   same as defn, yielding non-public def

@@ -1,8 +1,0 @@
-###*2###
-
-> *clojure.core/*2*
-> 
->     :::clojure
->     
-> 
->   bound in a repl thread to the second most recent value printed

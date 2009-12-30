@@ -1,8 +1,0 @@
-###byte-array###
-
-> *clojure.core/byte-array*
-> 
->     :::clojure
->     ([size-or-seq] [size init-val-or-seq])
-> 
->   Creates an array of bytes

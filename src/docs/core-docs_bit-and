@@ -1,8 +1,0 @@
-###bit-and###
-
-> *clojure.core/bit-and*
-> 
->     :::clojure
->     ([x y])
-> 
->   Bitwise and

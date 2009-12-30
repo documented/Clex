@@ -1,8 +1,0 @@
-###hash###
-
-> *clojure.core/hash*
-> 
->     :::clojure
->     ([x])
-> 
->   Returns the hash code of its argument

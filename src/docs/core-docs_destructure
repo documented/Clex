@@ -1,8 +1,0 @@
-###destructure###
-
-> *clojure.core/destructure*
-> 
->     :::clojure
->     ([bindings])
-> 
->   

@@ -1,8 +1,0 @@
-###float-array###
-
-> *clojure.core/float-array*
-> 
->     :::clojure
->     ([size-or-seq] [size init-val-or-seq])
-> 
->   Creates an array of floats

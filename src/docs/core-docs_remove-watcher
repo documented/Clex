@@ -1,9 +1,0 @@
-###remove-watcher###
-
-> *clojure.core/remove-watcher*
-> 
->     :::clojure
->     ([reference watcher-agent])
-> 
->   Experimental.
->   Removes a watcher (set by add-watcher) from a reference

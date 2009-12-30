@@ -1,8 +1,0 @@
-###inc###
-
-> *clojure.core/inc*
-> 
->     :::clojure
->     ([x])
-> 
->   Returns a number one greater than num.

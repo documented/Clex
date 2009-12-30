@@ -1,8 +1,0 @@
-###bit-shift-right###
-
-> *clojure.core/bit-shift-right*
-> 
->     :::clojure
->     ([x n])
-> 
->   Bitwise shift right

@@ -1,8 +1,0 @@
-###max###
-
-> *clojure.core/max*
-> 
->     :::clojure
->     ([x] [x y] [x y & more])
-> 
->   Returns the greatest of the nums.

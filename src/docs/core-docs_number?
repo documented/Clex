@@ -1,8 +1,0 @@
-###number?###
-
-> *clojure.core/number?*
-> 
->     :::clojure
->     ([x])
-> 
->   Returns true if x is a Number

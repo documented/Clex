@@ -1,8 +1,0 @@
-###char-array###
-
-> *clojure.core/char-array*
-> 
->     :::clojure
->     ([size-or-seq] [size init-val-or-seq])
-> 
->   Creates an array of chars

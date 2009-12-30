@@ -1,8 +1,0 @@
-###print-str###
-
-> *clojure.core/print-str*
-> 
->     :::clojure
->     ([& xs])
-> 
->   print to a string, returning it

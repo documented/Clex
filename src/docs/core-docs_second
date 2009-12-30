@@ -1,8 +1,0 @@
-###second###
-
-> *clojure.core/second*
-> 
->     :::clojure
->     ([x])
-> 
->   Same as (first (next x))

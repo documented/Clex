@@ -1,8 +1,0 @@
-###boolean-array###
-
-> *clojure.core/boolean-array*
-> 
->     :::clojure
->     ([size-or-seq] [size init-val-or-seq])
-> 
->   Creates an array of booleans

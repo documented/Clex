@@ -1,8 +1,0 @@
-###key###
-
-> *clojure.core/key*
-> 
->     :::clojure
->     ([e])
-> 
->   Returns the key of the map entry.

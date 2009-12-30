@@ -1,8 +1,0 @@
-###get-in###
-
-> *clojure.core/get-in*
-> 
->     :::clojure
->     ([m ks])
-> 
->   returns the value in a nested associative structure, where ks is a sequence of keys

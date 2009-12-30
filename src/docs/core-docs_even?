@@ -1,8 +1,0 @@
-###even?###
-
-> *clojure.core/even?*
-> 
->     :::clojure
->     ([n])
-> 
->   Returns true if n is even, throws an exception if n is not an integer

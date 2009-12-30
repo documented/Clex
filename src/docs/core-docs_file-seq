@@ -1,8 +1,0 @@
-###file-seq###
-
-> *clojure.core/file-seq*
-> 
->     :::clojure
->     ([dir])
-> 
->   A tree seq on java.io.Files

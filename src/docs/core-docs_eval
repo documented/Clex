@@ -1,8 +1,0 @@
-###eval###
-
-> *clojure.core/eval*
-> 
->     :::clojure
->     ([form])
-> 
->   Evaluates the form data structure (not text!) and returns the result.

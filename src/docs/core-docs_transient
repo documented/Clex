@@ -1,8 +1,0 @@
-###transient###
-
-> *clojure.core/transient*
-> 
->     :::clojure
->     ([coll])
-> 
->   Returns a new, transient version of the collection, in constant time.
