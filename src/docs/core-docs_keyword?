@@ -1,0 +1,8 @@
+###keyword?###
+
+> *clojure.core/keyword?*
+> 
+>     :::clojure
+>     ([x])
+> 
+>   Return true if x is a Keyword

@@ -1,0 +1,11 @@
+###await-for###
+
+> *clojure.core/await-for*
+> 
+>     :::clojure
+>     ([timeout-ms & agents])
+> 
+>   Blocks the current thread until all actions dispatched thus
+>   far (from this thread or agent) to the agents have occurred, or the
+>   timeout (in milliseconds) has elapsed. Returns nil if returning due
+>   to timeout, non-nil otherwise.

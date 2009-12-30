@@ -1,0 +1,8 @@
+###float###
+
+> *clojure.core/float*
+> 
+>     :::clojure
+>     ([x])
+> 
+>   Coerce to float

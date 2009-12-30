@@ -1,0 +1,9 @@
+###aclone###
+
+> *clojure.core/aclone*
+> 
+>     :::clojure
+>     ([array])
+> 
+>   Returns a clone of the Java array. Works on arrays of known
+>   types.

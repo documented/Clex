@@ -1,0 +1,8 @@
+###short###
+
+> *clojure.core/short*
+> 
+>     :::clojure
+>     ([x])
+> 
+>   Coerce to short

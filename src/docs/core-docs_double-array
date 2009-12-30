@@ -1,0 +1,8 @@
+###double-array###
+
+> *clojure.core/double-array*
+> 
+>     :::clojure
+>     ([size-or-seq] [size init-val-or-seq])
+> 
+>   Creates an array of doubles

@@ -1,0 +1,8 @@
+###set###
+
+> *clojure.core/set*
+> 
+>     :::clojure
+>     ([coll])
+> 
+>   Returns a set of the distinct elements of coll.

@@ -1,0 +1,8 @@
+###sequential?###
+
+> *clojure.core/sequential?*
+> 
+>     :::clojure
+>     ([coll])
+> 
+>   Returns true if coll implements Sequential

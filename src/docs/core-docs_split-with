@@ -1,0 +1,8 @@
+###split-with###
+
+> *clojure.core/split-with*
+> 
+>     :::clojure
+>     ([pred coll])
+> 
+>   Returns a vector of [(take-while pred coll) (drop-while pred coll)]

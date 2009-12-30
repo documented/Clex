@@ -1,0 +1,8 @@
+###ns-publics###
+
+> *clojure.core/ns-publics*
+> 
+>     :::clojure
+>     ([ns])
+> 
+>   Returns a map of the public intern mappings for the namespace.

@@ -1,0 +1,8 @@
+###array-map###
+
+> *clojure.core/array-map*
+> 
+>     :::clojure
+>     ([] [& keyvals])
+> 
+>   Constructs an array-map.

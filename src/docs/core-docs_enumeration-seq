@@ -1,0 +1,8 @@
+###enumeration-seq###
+
+> *clojure.core/enumeration-seq*
+> 
+>     :::clojure
+>     ([e])
+> 
+>   Returns a seq on a java.util.Enumeration

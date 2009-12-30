@@ -1,0 +1,8 @@
+###delay?###
+
+> *clojure.core/delay?*
+> 
+>     :::clojure
+>     ([x])
+> 
+>   returns true if x is a Delay created with delay

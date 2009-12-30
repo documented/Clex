@@ -1,0 +1,15 @@
+###add-watcher###
+
+> *clojure.core/add-watcher*
+> 
+>     :::clojure
+>     ([reference send-type watcher-agent action-fn])
+> 
+>   Experimental.
+>   Adds a watcher to an agent/atom/var/ref reference. The watcher must
+>   be an Agent, and the action a function of the agent's state and one
+>   additional arg, the reference. Whenever the reference's state
+>   changes, any registered watchers will have their actions
+>   sent. send-type must be one of :send or :send-off. The actions will
+>   be sent after the reference's state is changed. Var watchers are
+>   triggered only by root binding changes, not thread-local set!s

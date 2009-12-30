@@ -1,0 +1,8 @@
+###nfirst###
+
+> *clojure.core/nfirst*
+> 
+>     :::clojure
+>     ([x])
+> 
+>   Same as (next (first x))

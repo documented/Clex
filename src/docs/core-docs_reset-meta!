@@ -1,0 +1,8 @@
+###reset-meta!###
+
+> *clojure.core/reset-meta!*
+> 
+>     :::clojure
+>     ([iref metadata-map])
+> 
+>   Atomically resets the metadata for a namespace/var/ref/agent/atom

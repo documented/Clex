@@ -1,0 +1,8 @@
+###split-at###
+
+> *clojure.core/split-at*
+> 
+>     :::clojure
+>     ([n coll])
+> 
+>   Returns a vector of [(take n coll) (drop n coll)]

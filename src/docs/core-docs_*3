@@ -1,0 +1,8 @@
+###*3###
+
+> *clojure.core/*3*
+> 
+>     :::clojure
+>     
+> 
+>   bound in a repl thread to the third most recent value printed

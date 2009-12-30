@@ -1,0 +1,8 @@
+###nnext###
+
+> *clojure.core/nnext*
+> 
+>     :::clojure
+>     ([x])
+> 
+>   Same as (next (next x))

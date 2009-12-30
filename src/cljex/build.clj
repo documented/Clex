@@ -3,7 +3,9 @@
    clojure.contrib.duck-streams,
    clojure.contrib.shell-out
    clojure.contrib.str-utils
-   cljex.config])
+   clojure.set
+   cljex.config]
+  [:import java.io.File])
 
 (defn build-filename
   "build-filename takes a string like #'clojure.core/and, and turns it into _and.  The underscore protects us from creating '..' as a filename, which is illegal."
@@ -40,16 +42,11 @@
 
 (defn apply-markdown-and-html
   []
-  (doseq [f (enumerate-files *core-docs*)]
+  (doseq [f (file-seq *core-docs*)]
     (spit (java.io.File. (str f ".html")) (html
            [:html
             [:head (include-css "pygments.css")]
             [:body (str (sh *markdown-command* (str f) "-x" "codehilite"))]]))))
-
-(defn enumerate-files
-  "Enumerates all of the files located under [path]."
-  [path]
-  (file-seq path))
 
 (defn apply-markdown
   "Turns all of the core-docs into html files"
@@ -66,12 +63,22 @@
             [:head (include-css "pygments.css")]
             [:body (str (sh *markdown-command* (str f) "-x" "codehilite"))]]))))
 
-(defn compose-examples
-  []
-  (let [examples (file-seq *examples-dir*)
-        core-docs (file-seq *core-docs*)]
-    ))
+(defn get-file-names-to-set [dir]
+  (set (map #(.getName %) (file-seq dir))))
 
-;; Create two sets and do an intersection
+(defn compose-examples
+  "Finds all of the files whose filenames match in the examples and core-docs directories."
+  []
+  (let [examples (get-file-names-to-set *examples*)
+        core-docs (get-file-names-to-set *core-docs*)]
+    (intersection examples core-docs)))
+
+(defn build-examples
+  "Takes the composed examples and turns them into HTML output."
+  []
+  (let [files-to-convert (compose-examples)]
+    files-to-convert))
+
+
 
 ;; remember: (zipmap [:a :b :c] [1 2 3])

@@ -1,0 +1,8 @@
+###sorted-set-by###
+
+> *clojure.core/sorted-set-by*
+> 
+>     :::clojure
+>     ([comparator & keys])
+> 
+>   Returns a new sorted set with supplied keys, using the supplied comparator.

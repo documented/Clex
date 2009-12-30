@@ -1,0 +1,8 @@
+###type###
+
+> *clojure.core/type*
+> 
+>     :::clojure
+>     ([x])
+> 
+>   Returns the :type metadata of x, or its Class if none

@@ -1,0 +1,8 @@
+###fnext###
+
+> *clojure.core/fnext*
+> 
+>     :::clojure
+>     ([x])
+> 
+>   Same as (first (next x))

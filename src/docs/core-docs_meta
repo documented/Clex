@@ -1,0 +1,8 @@
+###meta###
+
+> *clojure.core/meta*
+> 
+>     :::clojure
+>     ([obj])
+> 
+>   Returns the metadata of obj, returns nil if there is no metadata.

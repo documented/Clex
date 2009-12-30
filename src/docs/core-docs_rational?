@@ -1,0 +1,8 @@
+###rational?###
+
+> *clojure.core/rational?*
+> 
+>     :::clojure
+>     ([n])
+> 
+>   

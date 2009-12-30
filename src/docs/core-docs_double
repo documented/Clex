@@ -1,0 +1,8 @@
+###double###
+
+> *clojure.core/double*
+> 
+>     :::clojure
+>     ([x])
+> 
+>   Coerce to double

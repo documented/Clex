@@ -1,0 +1,9 @@
+###load-reader###
+
+> *clojure.core/load-reader*
+> 
+>     :::clojure
+>     ([rdr])
+> 
+>   Sequentially read and evaluate the set of forms contained in the
+>   stream/file

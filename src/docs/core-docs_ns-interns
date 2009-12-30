@@ -1,0 +1,8 @@
+###ns-interns###
+
+> *clojure.core/ns-interns*
+> 
+>     :::clojure
+>     ([ns])
+> 
+>   Returns a map of the intern mappings for the namespace.

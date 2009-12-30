@@ -1,0 +1,9 @@
+###disj###
+
+> *clojure.core/disj*
+> 
+>     :::clojure
+>     ([set] [set key] [set key & ks])
+> 
+>   disj[oin]. Returns a new set of the same (hashed/sorted) type, that
+>   does not contain key(s).

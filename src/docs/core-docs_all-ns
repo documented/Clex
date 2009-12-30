@@ -1,0 +1,8 @@
+###all-ns###
+
+> *clojure.core/all-ns*
+> 
+>     :::clojure
+>     ([])
+> 
+>   Returns a sequence of all namespaces.

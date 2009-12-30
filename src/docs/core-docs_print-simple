@@ -1,0 +1,8 @@
+###print-simple###
+
+> *clojure.core/print-simple*
+> 
+>     :::clojure
+>     ([o w])
+> 
+>   

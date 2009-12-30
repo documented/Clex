@@ -1,0 +1,8 @@
+###create-struct###
+
+> *clojure.core/create-struct*
+> 
+>     :::clojure
+>     ([& keys])
+> 
+>   Returns a structure basis object.

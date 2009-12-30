@@ -1,0 +1,8 @@
+###*compile-files*###
+
+> *clojure.core/*compile-files**
+> 
+>     :::clojure
+>     
+> 
+>   Set to true when compiling files, false otherwise.

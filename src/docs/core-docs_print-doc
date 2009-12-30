@@ -1,0 +1,8 @@
+###print-doc###
+
+> *clojure.core/print-doc*
+> 
+>     :::clojure
+>     ([v])
+> 
+>   

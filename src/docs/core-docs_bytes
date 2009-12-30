@@ -1,0 +1,8 @@
+###bytes###
+
+> *clojure.core/bytes*
+> 
+>     :::clojure
+>     ([xs])
+> 
+>   Casts to bytes[]

@@ -7,13 +7,16 @@
 ;;; Global config variables ;;;;
 
 ;;; PATH ;;;
-(def *project-root* (java.io.File. "/home/defn/git/cljex/"))
+(def *path* (file-str (java.io.File. (System/getProperty "user.dir")) "/git" "cljex"))
+(def *home* (java.io.File. (System/getProperty "user.dir")))
+
+(def *project-root* (file-str *home* "/git/cljex/"))
 
 (def *core-docs* (file-str *project-root* "/src/docs/core-docs/"))
 
 (def *public-dir* (file-str *project-root* "/src/public/"))
 
-(def *examples-dir* (file-str *project-root* "/src/docs/examples/"))
+(def *examples* (file-str *project-root* "/src/docs/examples/"))
 
 (def *doc-output-dir* (file-str *project-root* "/src/public/docs/"))
 

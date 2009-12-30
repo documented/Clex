@@ -1,0 +1,8 @@
+###bigint###
+
+> *clojure.core/bigint*
+> 
+>     :::clojure
+>     ([x])
+> 
+>   Coerce to BigInteger

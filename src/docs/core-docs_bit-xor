@@ -1,0 +1,8 @@
+###bit-xor###
+
+> *clojure.core/bit-xor*
+> 
+>     :::clojure
+>     ([x y])
+> 
+>   Bitwise exclusive or

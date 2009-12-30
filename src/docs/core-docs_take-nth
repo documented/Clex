@@ -1,0 +1,8 @@
+###take-nth###
+
+> *clojure.core/take-nth*
+> 
+>     :::clojure
+>     ([n coll])
+> 
+>   Returns a lazy seq of every nth item in coll.

@@ -1,0 +1,8 @@
+###boolean###
+
+> *clojure.core/boolean*
+> 
+>     :::clojure
+>     ([x])
+> 
+>   Coerce to boolean

@@ -1,0 +1,8 @@
+###bit-not###
+
+> *clojure.core/bit-not*
+> 
+>     :::clojure
+>     ([x])
+> 
+>   Bitwise complement

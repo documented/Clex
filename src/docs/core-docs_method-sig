@@ -1,0 +1,8 @@
+###method-sig###
+
+> *clojure.core/method-sig*
+> 
+>     :::clojure
+>     ([meth])
+> 
+>   

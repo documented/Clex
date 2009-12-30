@@ -1,0 +1,8 @@
+###not-empty###
+
+> *clojure.core/not-empty*
+> 
+>     :::clojure
+>     ([coll])
+> 
+>   If coll is empty, returns nil, else coll

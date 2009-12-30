@@ -1,0 +1,8 @@
+###chunked-seq?###
+
+> *clojure.core/chunked-seq?*
+> 
+>     :::clojure
+>     ([s])
+> 
+>   

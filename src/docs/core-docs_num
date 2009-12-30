@@ -1,0 +1,8 @@
+###num###
+
+> *clojure.core/num*
+> 
+>     :::clojure
+>     ([x])
+> 
+>   Coerce to Number

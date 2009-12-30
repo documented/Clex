@@ -1,0 +1,8 @@
+###future-done?###
+
+> *clojure.core/future-done?*
+> 
+>     :::clojure
+>     ([f])
+> 
+>   Returns true if future f is done
