@@ -4,15 +4,20 @@
    clojure.contrib.duck-streams,
    clojure.contrib.shell-out,
    clojure.contrib.str-utils,
-   cljex.config] ;?
+   cljex.config
+   cljex.build]
   [:import java.io.File])
 
 ;; Output final print-markdown-doc + examples
 (defn docs-index []
   "Creates links to all of the docs located in public/docs/*"
-  (html (map #(link-to %)
+  (html (map #(link-to % (strip-dot-html %))
              (map #(str %)
-                  (file-seq (java.io.File. *doc-output-dir*))))))
+                  (rest (file-seq *doc-output-dir*))))))
+
+(defn create-index []
+  (spit (file-str *public-dir* "/" "index.html")
+        (template (docs-index))))
 
 
 (defn -main [])

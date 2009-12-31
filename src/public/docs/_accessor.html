@@ -1,4 +1,4 @@
-<html><head><link href="pygments.css" rel="stylesheet" type="text/css" /></head><body><h3>accessor</h3>
+<html><head><link href="../css/pygments.css" rel="stylesheet" type="text/css" /></head><body><h3>accessor</h3>
 <blockquote>
 <p><em>clojure.core/accessor</em></p>
 <div class="codehilite"><pre><span class="p">([</span><span class="nv">s</span> <span class="nv">key</span><span class="p">])</span>
@@ -10,4 +10,16 @@
   returned function should be (slightly) more efficient than using
   get, but such use of accessors should be limited to known
   performance-critical areas.</p>
-</blockquote></body></html>
+</blockquote>
+<h4>1.</h4>
+<div class="codehilite"><pre><span class="p">(</span><span class="k">defstruct </span><span class="nv">machine</span> <span class="nv">:id</span> <span class="nv">:description</span><span class="p">)</span>
+<span class="c1">;=&gt; #&#39;user/machine</span>
+<span class="p">(</span><span class="k">def </span><span class="nv">m</span> <span class="p">(</span><span class="nb">struct </span><span class="nv">machine</span> <span class="s">&quot;rhickey&quot;</span> <span class="s">&quot;the inventor of Clojure&quot;</span><span class="p">))</span>
+<span class="c1">;=&gt; #&#39;user/m</span>
+<span class="p">(</span><span class="nf">:id</span> <span class="nv">m</span><span class="p">)</span>
+<span class="c1">;=&gt; rhickey</span>
+<span class="p">(</span><span class="k">def </span><span class="nv">machine-id</span> <span class="p">(</span><span class="nb">accessor </span><span class="nv">machine</span> <span class="nv">:id</span><span class="p">))</span> <span class="c1">; bind accessor</span>
+<span class="c1">;=&gt; #&#39;user/machine-id</span>
+<span class="p">(</span><span class="nf">machine-id</span> <span class="nv">m</span><span class="p">)</span>
+<span class="c1">;=&gt; &quot;rhickey&quot;</span>
+</pre></div></body></html>

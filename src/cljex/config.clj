@@ -18,6 +18,8 @@
 
 (def *examples* (file-str *project-root* "/src/docs/examples/"))
 
+(def *compiled-docs* (file-str *project-root* "/src/docs/compiled/"))
+
 (def *doc-output-dir* (file-str *project-root* "/src/public/docs/"))
 
 ;;; OTHER ;;;

@@ -1,11 +1,9 @@
-#### Example Heading ####
-
-##### Example Sub-heading #####
+#### 1. ####
 
     #!clojure
     (println "This example has line numbers.)
 
-##### Example Sub-heading 2 #####
+#### 2. ####
     
     :::clojure
     (println "This example doesn't have line numbers.")

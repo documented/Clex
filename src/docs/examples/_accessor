@@ -1,6 +1,6 @@
-#### Accessor Example ####
+#### 1. ####
 
-    #!clojure
+    :::clojure
     (defstruct machine :id :description)
     ;=> #'user/machine
     (def m (struct machine "rhickey" "the inventor of Clojure"))
