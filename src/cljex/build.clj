@@ -18,7 +18,7 @@
 
 (defn strip-dot-html
   [input]
-  (second (re-find #".*\/(.*)\.html\Z" (str input))))
+  (second (re-find #".*\/_(.*)\.html\Z" (str input))))
 
 (defn print-markdown-doc
   "This is a modified version of print-doc which outputs the documentation in markdown format."
