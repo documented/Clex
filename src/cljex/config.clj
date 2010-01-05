@@ -8,7 +8,7 @@
 
 ;;; PATH ;;;
 (def *path* (file-str (java.io.File. (System/getProperty "user.dir")) "/git" "cljex"))
-(def *home* (java.io.File. (System/getProperty "user.dir")))
+(def *home* (java.io.File. (System/getProperty "user.home")))
 
 (def *project-root* (file-str *home* "/git/cljex/"))
 

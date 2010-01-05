@@ -55,6 +55,11 @@
 ;;     (sh *markdown-command* (str f)
 ;;         "-f" (str f ".html") "-x" "codehilite")))
 
+(defn to-html
+  "Takes the *out* from (print-markdown-doc #'doc) and applies pygments (with codehilite) to it.  Prints back to *out*."
+  [doc]
+  (sh *markdown-command* (str doc) "-x" "codehilite" (print-markdown-doc )))
+
 (defn get-file-names-to-set [dir]
   (set (map #(.getName %) (file-seq dir))))
 
