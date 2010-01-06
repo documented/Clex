@@ -5,5 +5,3 @@
 >     :::clojure
 >     ([end] [start end] [start end step])
 > 
->   Returns a lazy seq of nums from start (inclusive) to end
->   (exclusive), by step, where start defaults to 0 and step to 1.

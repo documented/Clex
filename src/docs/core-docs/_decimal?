@@ -5,4 +5,3 @@
 >     :::clojure
 >     ([n])
 > 
->   Returns true if n is a BigDecimal

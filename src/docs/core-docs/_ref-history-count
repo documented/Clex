@@ -5,4 +5,3 @@
 >     :::clojure
 >     ([ref])
 > 
->   Returns the history count of a ref

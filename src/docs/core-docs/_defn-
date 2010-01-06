@@ -5,5 +5,5 @@
 >     :::clojure
 >     ([name & decls])
 > 
-> Macro
->   same as defn, yielding non-public def
+> *Macro*
+>  same as defn, yielding non-public def

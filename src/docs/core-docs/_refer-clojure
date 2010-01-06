@@ -5,5 +5,5 @@
 >     :::clojure
 >     ([& filters])
 > 
-> Macro
->   Same as (refer 'clojure.core <filters>)
+> *Macro*
+>  Same as (refer 'clojure.core <filters>)

@@ -5,4 +5,3 @@
 >     :::clojure
 >     ([x])
 > 
->   Returns a number one less than num.

@@ -5,4 +5,3 @@
 >     :::clojure
 >     ([coll])
 > 
->   Returns true if coll implements Reversible

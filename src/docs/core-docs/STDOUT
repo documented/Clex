@@ -1,0 +1,7 @@
+<h3>juxt</h3>
+<blockquote>
+<p><em>clojure.core/juxt</em></p>
+<pre><code>:::clojure
+([f] [f g] [f g h] [f g h &amp; fs])
+</code></pre>
+</blockquote>

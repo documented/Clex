@@ -5,5 +5,3 @@
 >     :::clojure
 >     ([f])
 > 
->   Takes a function of no args, presumably with side effects, and returns an infinite
->   lazy sequence of calls to it

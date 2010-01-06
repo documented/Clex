@@ -5,4 +5,3 @@
 >     :::clojure
 >     ([x])
 > 
->   Returns the name String of a symbol or keyword.

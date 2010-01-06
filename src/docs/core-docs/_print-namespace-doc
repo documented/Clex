@@ -5,4 +5,3 @@
 >     :::clojure
 >     ([nspace])
 > 
->   Print the documentation string of a Namespace.

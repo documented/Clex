@@ -5,5 +5,5 @@
 >     :::clojure
 >     ([& body])
 > 
-> Macro
->   Ignores body, yields nil
+> *Macro*
+>  Ignores body, yields nil

@@ -5,4 +5,3 @@
 >     :::clojure
 >     ([& xs])
 > 
->   pr to a string, returning it

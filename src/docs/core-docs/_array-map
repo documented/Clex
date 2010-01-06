@@ -5,4 +5,3 @@
 >     :::clojure
 >     ([] [& keyvals])
 > 
->   Constructs an array-map.

@@ -5,4 +5,3 @@
 >     :::clojure
 >     ([x n])
 > 
->   Test bit at index n

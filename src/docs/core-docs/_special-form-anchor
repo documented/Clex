@@ -5,5 +5,3 @@
 >     :::clojure
 >     ([x])
 > 
->   Returns the anchor tag on http://clojure.org/special_forms for the
->   special form x, or nil

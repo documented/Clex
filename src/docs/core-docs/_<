@@ -5,5 +5,3 @@
 >     :::clojure
 >     ([x] [x y] [x y & more])
 > 
->   Returns non-nil if nums are in monotonically increasing order,
->   otherwise false.

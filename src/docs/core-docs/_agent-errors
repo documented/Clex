@@ -5,5 +5,3 @@
 >     :::clojure
 >     ([a])
 > 
->   Returns a sequence of the exceptions thrown during asynchronous
->   actions of the agent.

@@ -5,4 +5,3 @@
 >     :::clojure
 >     ([f])
 > 
->   Cancels the future, if possible.

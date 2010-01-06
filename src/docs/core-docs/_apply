@@ -5,4 +5,3 @@
 >     :::clojure
 >     ([f args* argseq])
 > 
->   Applies fn f to the argument list formed by prepending args to argseq.

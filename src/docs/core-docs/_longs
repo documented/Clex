@@ -5,4 +5,3 @@
 >     :::clojure
 >     ([xs])
 > 
->   Casts to long[]

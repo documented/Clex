@@ -5,4 +5,3 @@
 >     :::clojure
 >     ([s])
 > 
->   Returns true if s names a special form

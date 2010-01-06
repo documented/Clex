@@ -5,4 +5,3 @@
 >     :::clojure
 >     ([x])
 > 
->   Returns its argument.

@@ -5,4 +5,3 @@
 >     :::clojure
 >     ([x n])
 > 
->   Clear bit at index n

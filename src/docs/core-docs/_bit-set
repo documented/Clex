@@ -5,4 +5,3 @@
 >     :::clojure
 >     ([x n])
 > 
->   Set bit at index n

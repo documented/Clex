@@ -5,4 +5,3 @@
 >     :::clojure
 >     ([& keys])
 > 
->   Returns a structure basis object.

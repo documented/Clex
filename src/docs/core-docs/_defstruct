@@ -5,5 +5,5 @@
 >     :::clojure
 >     ([name & keys])
 > 
-> Macro
->   Same as (def name (create-struct keys...))
+> *Macro*
+>  Same as (def name (create-struct keys...))
