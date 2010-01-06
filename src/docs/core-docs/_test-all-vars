@@ -1,0 +1,7 @@
+###test-all-vars###
+
+> *clojure.test/test-all-vars*
+> 
+>     :::clojure
+>     ([ns])
+> 

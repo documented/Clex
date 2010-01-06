@@ -1,0 +1,7 @@
+###prewalk-replace###
+
+> *clojure.walk/prewalk-replace*
+> 
+>     :::clojure
+>     ([smap form])
+> 

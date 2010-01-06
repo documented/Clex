@@ -1,0 +1,7 @@
+###inspect-table###
+
+> *clojure.inspector/inspect-table*
+> 
+>     :::clojure
+>     ([data])
+> 

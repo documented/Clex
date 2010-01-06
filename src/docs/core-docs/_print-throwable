@@ -1,0 +1,7 @@
+###print-throwable###
+
+> *clojure.stacktrace/print-throwable*
+> 
+>     :::clojure
+>     ([tr])
+> 

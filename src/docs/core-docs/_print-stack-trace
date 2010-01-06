@@ -1,0 +1,7 @@
+###print-stack-trace###
+
+> *clojure.stacktrace/print-stack-trace*
+> 
+>     :::clojure
+>     ([tr] [tr n])
+> 

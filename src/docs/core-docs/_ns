@@ -6,6 +6,7 @@
 >     ([name & references])
 > 
 > *Macro*
+
 >  Sets *ns* to the namespace named by name (unevaluated), creating it
 >  if needed.  references can be zero or more of: (:refer-clojure ...)
 >  (:require ...) (:use ...) (:import ...) (:load ...) (:gen-class)

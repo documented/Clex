@@ -1,0 +1,7 @@
+###atom?###
+
+> *clojure.inspector/atom?*
+> 
+>     :::clojure
+>     ([x])
+> 

@@ -1,0 +1,7 @@
+###postwalk-replace###
+
+> *clojure.walk/postwalk-replace*
+> 
+>     :::clojure
+>     ([smap form])
+> 

@@ -1,0 +1,7 @@
+###compose-fixtures###
+
+> *clojure.test/compose-fixtures*
+> 
+>     :::clojure
+>     ([f1 f2])
+> 

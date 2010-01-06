@@ -6,6 +6,7 @@
 >     ([bindings & body])
 > 
 > *Macro*
+
 >  bindings => name n
 >
 >  Repeatedly executes body (presumably for side-effects) with name

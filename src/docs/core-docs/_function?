@@ -1,0 +1,7 @@
+###function?###
+
+> *clojure.test/function?*
+> 
+>     :::clojure
+>     ([x])
+> 

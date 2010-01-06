@@ -6,6 +6,7 @@
 >     ([name docstring? attr-map? dispatch-fn & options])
 > 
 > *Macro*
+
 >  Creates a new multimethod with the associated dispatch function.
 >  The docstring and attribute-map are optional.
 >

@@ -1,0 +1,7 @@
+###inspect###
+
+> *clojure.inspector/inspect*
+> 
+>     :::clojure
+>     ([x])
+> 

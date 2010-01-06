@@ -6,6 +6,7 @@
 >     ([bindings & body])
 > 
 > *Macro*
+
 >  binding => var-symbol init-expr
 >
 >  Creates new bindings for the (already-existing) vars, with the

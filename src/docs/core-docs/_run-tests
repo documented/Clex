@@ -1,0 +1,7 @@
+###run-tests###
+
+> *clojure.test/run-tests*
+> 
+>     :::clojure
+>     ([] [& namespaces])
+> 

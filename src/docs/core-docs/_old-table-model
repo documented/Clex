@@ -1,0 +1,7 @@
+###old-table-model###
+
+> *clojure.inspector/old-table-model*
+> 
+>     :::clojure
+>     ([data])
+> 

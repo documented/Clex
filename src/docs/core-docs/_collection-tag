@@ -1,0 +1,7 @@
+###collection-tag###
+
+> *clojure.inspector/collection-tag*
+> 
+>     :::clojure
+>     ([x])
+> 

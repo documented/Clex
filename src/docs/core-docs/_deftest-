@@ -1,0 +1,10 @@
+###deftest-###
+
+> *clojure.test/deftest-*
+> 
+>     :::clojure
+>     ([name & body])
+> 
+> *Macro*
+
+>  Like deftest but creates a private var.

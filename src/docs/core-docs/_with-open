@@ -6,6 +6,7 @@
 >     ([bindings & body])
 > 
 > *Macro*
+
 >  bindings => [name init ...]
 >
 >  Evaluates body in a try expression with names bound to the values

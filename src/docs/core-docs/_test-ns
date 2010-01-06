@@ -1,0 +1,7 @@
+###test-ns###
+
+> *clojure.test/test-ns*
+> 
+>     :::clojure
+>     ([ns])
+> 

@@ -1,0 +1,7 @@
+###inc-report-counter###
+
+> *clojure.test/inc-report-counter*
+> 
+>     :::clojure
+>     ([name])
+> 

@@ -1,0 +1,7 @@
+###print-cause-trace###
+
+> *clojure.stacktrace/print-cause-trace*
+> 
+>     :::clojure
+>     ([tr] [tr n])
+> 

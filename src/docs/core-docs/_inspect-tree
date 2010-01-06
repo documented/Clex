@@ -1,0 +1,7 @@
+###inspect-tree###
+
+> *clojure.inspector/inspect-tree*
+> 
+>     :::clojure
+>     ([data])
+> 

@@ -1,0 +1,7 @@
+###list-model###
+
+> *clojure.inspector/list-model*
+> 
+>     :::clojure
+>     ([provider])
+> 

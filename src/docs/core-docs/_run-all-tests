@@ -1,0 +1,7 @@
+###run-all-tests###
+
+> *clojure.test/run-all-tests*
+> 
+>     :::clojure
+>     ([] [re])
+> 

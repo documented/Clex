@@ -6,6 +6,7 @@
 >     ([name-vals-vec & body])
 > 
 > *Macro*
+
 >  varbinding=> symbol init-expr
 >
 >  Executes the exprs in a context in which the symbols are bound to

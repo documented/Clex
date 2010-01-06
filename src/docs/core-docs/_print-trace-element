@@ -1,0 +1,7 @@
+###print-trace-element###
+
+> *clojure.stacktrace/print-trace-element*
+> 
+>     :::clojure
+>     ([e])
+> 

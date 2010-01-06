@@ -1,0 +1,7 @@
+###prewalk###
+
+> *clojure.walk/prewalk*
+> 
+>     :::clojure
+>     ([f form])
+> 

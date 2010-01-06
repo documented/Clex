@@ -1,0 +1,7 @@
+###macroexpand-all###
+
+> *clojure.walk/macroexpand-all*
+> 
+>     :::clojure
+>     ([form])
+> 

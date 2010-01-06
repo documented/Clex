@@ -1,0 +1,7 @@
+###walk###
+
+> *clojure.walk/walk*
+> 
+>     :::clojure
+>     ([inner outer form])
+> 

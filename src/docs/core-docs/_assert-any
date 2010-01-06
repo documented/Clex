@@ -1,0 +1,7 @@
+###assert-any###
+
+> *clojure.test/assert-any*
+> 
+>     :::clojure
+>     ([msg form])
+> 

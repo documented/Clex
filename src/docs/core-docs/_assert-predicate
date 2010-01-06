@@ -1,0 +1,7 @@
+###assert-predicate###
+
+> *clojure.test/assert-predicate*
+> 
+>     :::clojure
+>     ([msg form])
+> 

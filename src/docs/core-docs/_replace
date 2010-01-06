@@ -1,7 +1,7 @@
 ###replace###
 
-> *clojure.zip/replace*
+> *clojure.core/replace*
 > 
 >     :::clojure
->     ([loc node])
+>     ([smap coll])
 > 

@@ -1,0 +1,7 @@
+###test-var###
+
+> *clojure.test/test-var*
+> 
+>     :::clojure
+>     ([v])
+> 

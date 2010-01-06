@@ -1,0 +1,7 @@
+###tree-model###
+
+> *clojure.inspector/tree-model*
+> 
+>     :::clojure
+>     ([data])
+> 

@@ -1,0 +1,7 @@
+###apply-template###
+
+> *clojure.template/apply-template*
+> 
+>     :::clojure
+>     ([argv expr values])
+> 

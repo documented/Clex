@@ -1,0 +1,10 @@
+###with-test-out###
+
+> *clojure.test/with-test-out*
+> 
+>     :::clojure
+>     ([& body])
+> 
+> *Macro*
+
+>  Runs body with *out* bound to the value of *test-out*.
