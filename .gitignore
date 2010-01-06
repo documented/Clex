@@ -5,3 +5,6 @@ Manifest.txt
 .DS_Store
 *jar
 lib/*.jar
+eproject.cfg
+classes/*
+test/*
