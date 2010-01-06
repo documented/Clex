@@ -1,0 +1,7 @@
+###rename-keys###
+
+> *clojure.set/rename-keys*
+> 
+>     :::clojure
+>     ([map kmap])
+> 

@@ -1,0 +1,7 @@
+###leftmost###
+
+> *clojure.zip/leftmost*
+> 
+>     :::clojure
+>     ([loc])
+> 

@@ -1,0 +1,7 @@
+###edit###
+
+> *clojure.zip/edit*
+> 
+>     :::clojure
+>     ([loc f & args])
+> 

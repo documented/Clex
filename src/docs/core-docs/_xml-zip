@@ -1,0 +1,7 @@
+###xml-zip###
+
+> *clojure.zip/xml-zip*
+> 
+>     :::clojure
+>     ([root])
+> 

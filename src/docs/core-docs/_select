@@ -1,0 +1,7 @@
+###select###
+
+> *clojure.set/select*
+> 
+>     :::clojure
+>     ([pred xset])
+> 

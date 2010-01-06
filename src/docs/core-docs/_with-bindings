@@ -1,11 +1,12 @@
 ###with-bindings###
 
-> *clojure.core/with-bindings*
+> *clojure.main/with-bindings*
 > 
 >     :::clojure
->     ([binding-map & body])
+>     ([& body])
 > 
 > *Macro*
->  Takes a map of Var/value pairs. Installs for the given Vars the associated
->  values as thread-local bindings. The executes body. Pops the installed
->  bindings after body was evaluated. Returns the value of body.
+>  Executes body in the context of thread-local bindings for several vars
+>  that often need to be set!: *ns* *warn-on-reflection* *math-context*
+>  *print-meta* *print-length* *print-level* *compile-path*
+>  *command-line-args* *1 *2 *3 *e

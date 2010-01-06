@@ -1,0 +1,7 @@
+###insert-child###
+
+> *clojure.zip/insert-child*
+> 
+>     :::clojure
+>     ([loc item])
+> 

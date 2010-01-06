@@ -1,0 +1,7 @@
+###parse###
+
+> *clojure.xml/parse*
+> 
+>     :::clojure
+>     ([s] [s startparse])
+> 

@@ -1,0 +1,7 @@
+###index###
+
+> *clojure.set/index*
+> 
+>     :::clojure
+>     ([xrel ks])
+> 

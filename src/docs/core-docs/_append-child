@@ -1,0 +1,7 @@
+###append-child###
+
+> *clojure.zip/append-child*
+> 
+>     :::clojure
+>     ([loc item])
+> 

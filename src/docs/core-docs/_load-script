@@ -1,0 +1,7 @@
+###load-script###
+
+> *clojure.main/load-script*
+> 
+>     :::clojure
+>     ([path])
+> 

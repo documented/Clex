@@ -1,0 +1,7 @@
+###zipper###
+
+> *clojure.zip/zipper*
+> 
+>     :::clojure
+>     ([branch? children make-node root])
+> 

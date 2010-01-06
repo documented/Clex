@@ -1,0 +1,7 @@
+###emit-element###
+
+> *clojure.xml/emit-element*
+> 
+>     :::clojure
+>     ([e])
+> 

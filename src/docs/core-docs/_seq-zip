@@ -1,0 +1,7 @@
+###seq-zip###
+
+> *clojure.zip/seq-zip*
+> 
+>     :::clojure
+>     ([root])
+> 

@@ -1,0 +1,7 @@
+###vector-zip###
+
+> *clojure.zip/vector-zip*
+> 
+>     :::clojure
+>     ([root])
+> 

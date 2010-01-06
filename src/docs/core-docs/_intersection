@@ -1,0 +1,7 @@
+###intersection###
+
+> *clojure.set/intersection*
+> 
+>     :::clojure
+>     ([s1] [s1 s2] [s1 s2 & sets])
+> 

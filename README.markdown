@@ -12,11 +12,13 @@ If you're interested in reading the examples locally, simply:
 
 > `cd cljex/`
 
+> `./build.sh`
+
 and from the command line run:
 
 > `java -jar cljex.jar`
 
-This will spawn a webserver at [localhost:5885](http://localhost:5885).  Steer your
+This will spawn a webserver at [localhost:5885](http://localhost:8080).  Steer your
 browser there, and you're off to the races.
 
 If you'd rather not go to the trouble, the current progress of the
@@ -37,8 +39,8 @@ project itself, currently the only requirements for building are:
       * `easy_install Markdown`
 
 If you'd like to contribute documentation, it's very simple.  Under
-the `src/` directory you'll find a `docs/` directory which contains
-markdown files.
+the `src/` directory you'll find a `docs/examples/` directory which contains
+markdown files.  Note that you must name your own example files with a leading `_`.  For instance: `_->>`.  In this case creating the file would mean doing something like this (to escape special characters): `touch _\-\>\>`
 
 From there you'll find a directory structure with the examples in the
 following format:
@@ -46,7 +48,11 @@ following format:
     cljex/
        \-> src/
             \-> docs/
-                 \-> _->>.text
+                 \-> examples
+                       \-> _->>
+                       |-> _accessor
+                       |-> _and
+                       |-> ...
 
 To contribute an example, simply fork this project on `github`
 (where else?), observe the proper **formatting** for examples, and get
@@ -57,13 +63,15 @@ down to business.
 The formatting of these markdown documents is very
 straight-forward.  An example file looks like this:
 
-Note that you can use `#!clojure` to show line numbers.  Or you can use
+Note that you can use `#!clojure` to show fancy line numbers.  Or you can use
 `:::clojure` for no line numbers.
 
+    #### Example A ####
     #!clojure
     (take 5 (range 0 10))
     ;=> (0 1 2 3 4)
-        
+    
+    #### Example B ####
     :::clojure
     (take 5 (range 0 10))
     ;=> (0 1 2 3 4)
@@ -85,3 +93,8 @@ Standard [leiningen](http://github.com/technomancy/leiningen/) stuff:
 >    lein compile
 
 >    lein uberjar
+
+## Running ##
+
+To start up the server:
+>    java -jar cljex.jar --server

@@ -1,0 +1,7 @@
+###union###
+
+> *clojure.set/union*
+> 
+>     :::clojure
+>     ([] [s1] [s1 s2] [s1 s2 & sets])
+> 

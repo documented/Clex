@@ -1,0 +1,7 @@
+###repl-exception###
+
+> *clojure.main/repl-exception*
+> 
+>     :::clojure
+>     ([throwable])
+> 

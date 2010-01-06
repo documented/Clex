@@ -1,0 +1,7 @@
+###skip-whitespace###
+
+> *clojure.main/skip-whitespace*
+> 
+>     :::clojure
+>     ([s])
+> 

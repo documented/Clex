@@ -1,0 +1,7 @@
+###join###
+
+> *clojure.set/join*
+> 
+>     :::clojure
+>     ([xrel yrel] [xrel yrel km])
+> 

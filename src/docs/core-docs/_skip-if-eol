@@ -1,0 +1,7 @@
+###skip-if-eol###
+
+> *clojure.main/skip-if-eol*
+> 
+>     :::clojure
+>     ([s])
+> 

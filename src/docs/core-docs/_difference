@@ -1,0 +1,7 @@
+###difference###
+
+> *clojure.set/difference*
+> 
+>     :::clojure
+>     ([s1] [s1 s2] [s1 s2 & sets])
+> 

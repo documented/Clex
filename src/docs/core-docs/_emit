@@ -1,0 +1,7 @@
+###emit###
+
+> *clojure.xml/emit*
+> 
+>     :::clojure
+>     ([x])
+> 

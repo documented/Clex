@@ -1,0 +1,7 @@
+###startparse-sax###
+
+> *clojure.xml/startparse-sax*
+> 
+>     :::clojure
+>     ([s ch])
+> 

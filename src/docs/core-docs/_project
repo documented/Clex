@@ -1,0 +1,7 @@
+###project###
+
+> *clojure.set/project*
+> 
+>     :::clojure
+>     ([xrel ks])
+> 

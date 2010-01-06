@@ -1,6 +1,6 @@
-###next###
+###root###
 
-> *clojure.zip/next*
+> *clojure.zip/root*
 > 
 >     :::clojure
 >     ([loc])

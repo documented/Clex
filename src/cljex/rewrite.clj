@@ -8,9 +8,7 @@
                                         ;==============================
                                         ; Configuration Options
                                         ;==============================
-
 (def *markdown-command* "/usr/local/bin/markdown")
-
 (def *project-root* "/Users/defn/git/cljex/")
 (def *core-docs* (str *project-root* "src/docs/core-docs/"))
 (def *examples-dir* (str *project-root* "src/docs/examples/"))
@@ -18,12 +16,18 @@
                                         ;==============================
                                         ; Namespace Functions
                                         ;==============================
-(defn discover-namespace [nspace]
-  "Devin"
-  (vals (ns-publics nspace)))
+(defn discover-namespace
+  "Gets all of the vals in the map produced by (ns-publics '"
+  [ns]
+  (vals (ns-publics ns)))
 
+(defmacro discover-namespace-m [ns] `(discover-namespace '~ns))
+
+                                        ;==============================
+                                        ; Format/Output Documentation
+                                        ;==============================
 (defn print-markdown-doc
-  "This is a modified version of print-doc which outputs the documentation in markdown format."
+  "Prints documentation in markdown format."
   [v]
   [(str "###" (:name (meta v)) "###\n")
    (str "> *" (ns-name (:ns (meta v))) "/" (:name (meta v)) "*")
@@ -35,20 +39,8 @@
      (str "> *Macro*"))
    (str ">  " (re-gsub #"\n" "\n>" (str (:doc (meta v)))))])
 
-;; (defn compose-markdown-core-doc
-;;   [v]
-;;   (let [name    (str (:name (meta v)))
-;;         nsname  (str (ns-name (:ns (meta v))) "/" (:name (meta v)))
-;;         arglist (str (:arglists (meta v)))
-;;         macro   (when (:macro (meta v))
-;;                   (html [:b "Macro"]))
-;;         docstring (str (:doc (meta v)))]
-;;     (html [:h3 name]
-;;           [:blockquote [:p [:em nsname]]]
-;;           [:blockquote [:p ]])))
-
-
-(defn create-core-docs
+(defn create-docs
+  "Create the documentation for [nspace] in the *core-docs* directory."
   [nspace]
   (doseq [f (discover-namespace nspace)]
     (let [filename (str "_" (:name (meta f)))]
@@ -56,9 +48,8 @@
                    (print-markdown-doc f)))))
 
                                         ;==============================
-                                        ; Example Setup
+                                        ; Example Builder
                                         ;==============================
-
 (defn get-file-names-to-set [dir]
   (set (map #(.getName %) (file-seq (java.io.File. dir)))))
 
@@ -67,21 +58,9 @@
            examples  (get-file-names-to-set *examples-dir*)]
        (intersection core-docs examples)))
 
-;; (def examples-to-create
-;;      (let [core-docs (get-file-names-to-set *core-docs*)
-;;            examples (get-file-names-to-set *examples-dir*)]
-;;        (difference core-docs examples)))
-
-;; (defn create-empty-examples
-;;   []
-;;   (let [empty-examples (examples-to-create)]
-;;     (doseq [example empty-examples]
-;;       (write-lines (file-str *examples-dir* example)))))
-
                                         ;==============================
                                         ; Communicate with the server
                                         ;==============================
-
 (defn get-doc [doc]
   (concat
    (str (sh *markdown-command* doc "-x" "codehilite"))

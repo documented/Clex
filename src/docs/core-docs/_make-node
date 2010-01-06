@@ -1,0 +1,7 @@
+###make-node###
+
+> *clojure.zip/make-node*
+> 
+>     :::clojure
+>     ([loc node children])
+> 

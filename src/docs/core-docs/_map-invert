@@ -1,0 +1,7 @@
+###map-invert###
+
+> *clojure.set/map-invert*
+> 
+>     :::clojure
+>     ([m])
+> 

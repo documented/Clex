@@ -1,0 +1,7 @@
+###insert-left###
+
+> *clojure.zip/insert-left*
+> 
+>     :::clojure
+>     ([loc item])
+> 

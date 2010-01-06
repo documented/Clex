@@ -1,0 +1,7 @@
+###main###
+
+> *clojure.main/main*
+> 
+>     :::clojure
+>     ([& args])
+> 

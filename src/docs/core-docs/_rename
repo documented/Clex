@@ -1,0 +1,7 @@
+###rename###
+
+> *clojure.set/rename*
+> 
+>     :::clojure
+>     ([xrel kmap])
+> 
