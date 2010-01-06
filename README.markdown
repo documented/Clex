@@ -18,8 +18,7 @@ and from the command line run:
 
 > `java -jar cljex.jar`
 
-This will spawn a webserver at [localhost:5885](http://localhost:8080).  Steer your
-browser there, and you're off to the races.
+This will create up-to-date documentation files for you.  Then all you have left to do is run `java -jar cljex.jar --server` and point your browser at [localhost:8080](http://localhost:8080).  You're off to the races.
 
 If you'd rather not go to the trouble, the current progress of the
 project can always be viewed at [getclojure.org](http://getclojure.org/)
