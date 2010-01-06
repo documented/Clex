@@ -1,2 +1,0 @@
-* TODO Get a working server up and running via the jar by implementing a fully functional -main
-  in core.clj.
