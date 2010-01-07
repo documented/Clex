@@ -9,25 +9,17 @@
    clojure.walk
    clojure.template
    clojure.test
-   clojure.stacktrace])
+   clojure.stacktrace
+   cljex.config])
 
-                                        ;==============================
-                                        ; Configuration Options
-                                        ;==============================
-(def *markdown-command* "/usr/local/bin/markdown")
-(def *project-root* "/Users/defn/git/cljex/")
-(def *public-dir* (str *project-root* "src/cljex/public/"))
-(def *core-docs* (str *project-root* "src/docs/core-docs/"))
-(def *examples-dir* (str *project-root* "src/docs/examples/"))
-
-(def *site-url* "http://localhost:8080")
-(def *site-title* "cljex")
+;; TODO ~ Make dynamic frames with some JS
+;; 
 
                                         ;==============================
                                         ; Namespace Functions
                                         ;==============================
 (defn discover-namespace
-  "Gets all of the vals in the map produced by (ns-publics '"
+  "Gets all of the vals in the map produced by (ns-publics 'ns)"
   [ns]
   (vals (ns-publics ns)))
 
@@ -102,6 +94,21 @@
      [:div#left (ordered-list (gen-doc-index-inline))]
      [:div#right ,,,,,body,,,,,]]]))
 
+(defn app-layout-frames [& body]
+  (html
+   (doctype :html4)
+   [:html
+    [:head
+     [:title *site-title*]
+     (include-css "/css/pygments.css" "/css/global.css")]
+    [:frameset {:rows "60,*,60"}
+     [:frame {:name "left"}
+      (ordered-list (gen-doc-index-inline))]
+     [:frameset {:cols "250,*"}
+      [:frame {:src [:h1 "cljex"] :name "top"} (comment [:h1 "cljex"])]
+      [:frame {:name "main"}] ,,,body,,,]
+     [:frame {:name "bottom"} "made with the healing power of clojure"]]]))
+
 (defn gen-doc-index []
   (app-layout
    (interpose [:br]
@@ -139,9 +146,9 @@
                                         ;==============================
                                         ; Start Your Engines
                                         ;==============================
-;; (run-server
-;;  {:port 8083}
-;;  "/*" (servlet all-routes))
+(run-server
+ {:port 8080}
+ "/*" (servlet all-routes))
 
                                         ;==============================
                                         ; Main
