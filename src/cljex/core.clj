@@ -16,7 +16,7 @@
                                         ;==============================
 (def *markdown-command* "/usr/local/bin/markdown")
 (def *project-root* "/Users/defn/git/cljex/")
-(def *public-dir* (str *project-root* "src/public/"))
+(def *public-dir* (str *project-root* "src/cljex/public/"))
 (def *core-docs* (str *project-root* "src/docs/core-docs/"))
 (def *examples-dir* (str *project-root* "src/docs/examples/"))
 
@@ -80,7 +80,7 @@
                                         ; Layout
                                         ;==============================
 (defn get-doc-index []
-  (rest (file-seq (java.io.File. *core-docs*))))
+  (sort (rest (file-seq (java.io.File. *core-docs*)))))
 
 (defn gen-doc-index-inline []
   (interpose [:br]
@@ -126,7 +126,7 @@
   (GET "/docs/:name" (doc-page (:name params))))
 
 (defroutes static-routes
-  (GET "/*" (serve-file "/Users/defn/git/cljex/src/cljex/public/"(params :*))))
+  (GET "/*" (serve-file *public-dir* (params :*))))
 
 (defroutes error-routes
   (ANY "/*" [404 "404 Page Not Found"]))
