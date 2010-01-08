@@ -150,9 +150,9 @@
                                         ;==============================
                                         ; Start Your REPL Engine
                                         ;==============================
-(run-server
- {:port 8080}
- "/*" (servlet all-routes))
+;;(run-server
+;; {:port 8080}
+;; "/*" (servlet all-routes))
 
                                         ;==============================
                                         ; Main
