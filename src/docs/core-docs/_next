@@ -1,7 +1,7 @@
 ###next###
 
-> *clojure.core/next*
+> *clojure.zip/next*
 > 
 >     :::clojure
->     ([coll])
+>     ([loc])
 > 

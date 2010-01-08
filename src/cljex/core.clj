@@ -15,8 +15,8 @@
    clojure.zip
    clojure.inspector])
 
-;; TODO ~ Make dynamic frames with some JS
-;; 
+;; TODO
+;; ~ Make dynamic frames with some JS
 
                                         ;==============================
                                         ; Namespace Functions

@@ -1,0 +1,7 @@
+###successful?###
+
+> *clojure.test/successful?*
+> 
+>     :::clojure
+>     ([summary])
+> 

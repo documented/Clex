@@ -4,7 +4,7 @@
                                         ; Configuration Options
                                         ;==============================
 (def *markdown-command* "/usr/local/bin/markdown")
-(def *project-root* "/Users/defn/git/cljex/")
+(def *project-root* "/home/defn/git/cljex/")
 (def *public-dir* (str *project-root* "src/cljex/public/"))
 (def *core-docs* (str *project-root* "src/docs/core-docs/"))
 (def *examples-dir* (str *project-root* "src/docs/examples/"))
