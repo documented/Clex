@@ -1,7 +1,7 @@
 ###remove###
 
-> *clojure.core/remove*
+> *clojure.zip/remove*
 > 
 >     :::clojure
->     ([pred coll])
+>     ([loc])
 > 

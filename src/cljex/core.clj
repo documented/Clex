@@ -15,8 +15,8 @@
    clojure.zip
    clojure.inspector])
 
-;; TODO ~ Make dynamic frames with some JS
-;; 
+;; TODO
+;; ~ Make dynamic frames with some JS
 
                                         ;==============================
                                         ; Namespace Functions
@@ -26,7 +26,7 @@
   [ns]
   (vals (ns-publics ns)))
 
-(defmacro discover-namespace-m [ns] `(discover-namespace '~ns))
+(defmacro discover-namespace* [ns] `(discover-namespace '~ns))
 
                                         ;==============================
                                         ; Format/Output Documentation
@@ -136,7 +136,8 @@
   (GET "/docs/:name" (doc-page (:name params))))
 
 (defroutes static-routes
-  (GET "/*" (serve-file *public-dir* (params :*))))
+  (GET "/*" (serve-file *public-dir* (params :*)))
+  (GET "/doc-index") (gen-doc-index-inline))
 
 (defroutes error-routes
   (ANY "/*" [404 "404 Page Not Found"]))
@@ -147,11 +148,11 @@
   error-routes)
 
                                         ;==============================
-                                        ; Start Your Engines
+                                        ; Start Your REPL Engine
                                         ;==============================
-;; (run-server
-;;  {:port 8080}
-;;  "/*" (servlet all-routes))
+(run-server
+ {:port 8080}
+ "/*" (servlet all-routes))
 
                                         ;==============================
                                         ; Main

@@ -4,6 +4,7 @@
                                         ; Configuration Options
                                         ;==============================
 (def *markdown-command* "/usr/local/bin/markdown")
+
 (def *project-root* (System/getProperty "user.dir"))
 (def *public-dir* (str *project-root* "/src/cljex/public/"))
 (def *core-docs* (str *project-root* "/src/docs/core-docs/"))

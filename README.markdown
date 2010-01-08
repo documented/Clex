@@ -28,12 +28,10 @@ project can always be viewed at [getclojure.org](http://getclojure.org/)
 If you're planning on contributing to the code being used for the
 project itself, currently the only requirements for building are:
 
-* [Clojure](http://clojure.org/)
-* [Compojure](http://github.com/weavejester/compojure/)
 * [Leiningen](http://github.com/technomancy/leiningen/)
 * [Pygments](http://pygments.org/)
-   * If you have python 2.6:
-      * `easy_install pygments`
+   * If you have python < 2.5.x
+      * `easy_install Pygments==1.1.1`
       * `easy_install ElementTree`
       * `easy_install Markdown`
 
@@ -66,14 +64,16 @@ Note that you can use `#!clojure` to show fancy line numbers.  Or you can use
 `:::clojure` for no line numbers.
 
     #### Example A ####
-    #!clojure
-    (take 5 (range 0 10))
-    ;=> (0 1 2 3 4)
+        #!clojure
+        (take 5 (range 0 10))
+        ; => (0 1 2 3 4)
     
     #### Example B ####
-    :::clojure
-    (take 5 (range 0 10))
-    ;=> (0 1 2 3 4)
+        :::clojure
+        (take 5 (range 0 10))
+        ; => (0 1 2 3 4)
+
+See the `_accessor` example for a good template.
 
 For many of Clojure's forms there are multiple examples one could
 give to flesh out the possibilities and possible use-cases for a
@@ -86,14 +86,11 @@ to-date you can check out [getclojure.org](http://getclojure.org/)
 
 ## Building ##
 
-Standard [leiningen](http://github.com/technomancy/leiningen/) stuff:
->    lein deps
-
->    lein compile
-
->    lein uberjar
+`./build.sh`
 
 ## Running ##
+To build the latest docs:
+>    java -jar cljex.jar
 
 To start up the server:
 >    java -jar cljex.jar --server
