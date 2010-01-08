@@ -5,12 +5,15 @@
    clojure.contrib.duck-streams
    clojure.contrib.shell-out
    clojure.set
+   cljex.config]
+  [:require
    clojure.xml
    clojure.walk
    clojure.template
    clojure.test
    clojure.stacktrace
-   cljex.config])
+   clojure.zip
+   clojure.inspector])
 
 ;; TODO ~ Make dynamic frames with some JS
 ;; 
@@ -146,9 +149,9 @@
                                         ;==============================
                                         ; Start Your Engines
                                         ;==============================
-(run-server
- {:port 8080}
- "/*" (servlet all-routes))
+;; (run-server
+;;  {:port 8080}
+;;  "/*" (servlet all-routes))
 
                                         ;==============================
                                         ; Main
@@ -160,7 +163,9 @@
       'clojure.template
       'clojure.test
       'clojure.walk
-      'clojure.xml])
+      'clojure.xml
+      'clojure.zip
+      'clojure.inspector])
 
 (defn -main [& args]
   (if (= (first args) "--server")
