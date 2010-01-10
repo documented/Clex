@@ -94,3 +94,7 @@ To build the latest docs:
 
 To start up the server:
 >    java -jar cljex.jar --server
+
+To do both:
+
+`./start-server.sh`

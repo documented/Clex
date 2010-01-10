@@ -5,6 +5,7 @@
    clojure.contrib.duck-streams
    clojure.contrib.shell-out
    clojure.set
+   autodoc.collect-info
    cljex.config]
   [:require
    clojure.xml
@@ -17,6 +18,7 @@
 
 ;; TODO
 ;; ~ Make dynamic frames with some JS
+;; ~ Move away from Python highlighting and use JS to do markdown + highlighting
 
                                         ;==============================
                                         ; Namespace Functions
@@ -66,10 +68,25 @@
                                         ;==============================
                                         ; Communicate with the server
                                         ;==============================
+
+(defn basic-layout [& body]
+  (html
+   (doctype :xhtml)
+   [:html
+    [:head
+     [:title *site-title*]
+     (include-css "/css/global.css" "/css/github.css" "/css/pygments.css")]
+    [:body ,,,body,,,]]))
+
 (defn get-doc [doc]
   (str (sh *markdown-command* (str *core-docs* doc) "-x" "codehilite")
        (if (examples-which-exist doc)
          (sh *markdown-command* (str *examples-dir* doc) "-x" "codehilite"))))
+
+(defn get-doc-markdown [doc]
+  (str (sh *markdown-command* (str *core-docs* doc))
+       (if (examples-which-exist doc)
+         (sh *markdown-command* (str *examples-dir* doc)))))
 
                                         ;==============================
                                         ; Layout
@@ -77,11 +94,25 @@
 (defn get-doc-index []
   (sort (rest (file-seq (java.io.File. *core-docs*)))))
 
-(defn gen-doc-index-inline []
+(defn link-to-frame
+  "Wraps some content in a HTML hyperlink with the supplied URL and target frame."
+  [url frame & content]
+  [:a {:href url :target frame} content])
+
+(defn gen-doc-index []
   (interpose [:br]
              (map #(link-to (str "/docs/" (.getName %))
                             (rest (seq (.getName %))))
                   (get-doc-index))))
+
+(defn gen-doc-index-frame []
+  (basic-layout
+   (interpose [:br]
+              (map #(link-to-frame
+                     (str "/docs/" (.getName %))
+                     "main"
+                     (rest (seq (.getName %))))
+                   (get-doc-index)))))
 
 (defn app-layout [& body]
   (html
@@ -89,55 +120,51 @@
    [:html
     [:head
      [:title *site-title*]
-     (include-css "/css/pygments.css" "/css/global.css")]
+     (include-css "/css/pygments.css" "/css/global.css")
+     (javascript-tag "/js/highlight.pack.js")]
     [:body
      [:div#header [:h1 *site-title*]]
      [:div#nav (unordered-list [(link-to "/" "[index]")
                                 (link-to "http://github.com/defn/cljex" "[contribute]")])]
-     [:div#left (ordered-list (gen-doc-index-inline))]
+     [:div#left (ordered-list (gen-doc-index))]
      [:div#right ,,,,,body,,,,,]]]))
 
 (defn app-layout-frames [& body]
   (html
-   (doctype :html4)
+   (doctype :xhtml)
    [:html
     [:head
      [:title *site-title*]
-     (include-css "/css/pygments.css" "/css/global.css")]
-    [:frameset {:rows "60,*,60"}
-     [:frame {:name "left"}
-      (ordered-list (gen-doc-index-inline))]
-     [:frameset {:cols "250,*"}
-      [:frame {:src [:h1 "cljex"] :name "top"} (comment [:h1 "cljex"])]
-      [:frame {:name "main"}] ,,,body,,,]
-     [:frame {:name "bottom"} "made with the healing power of clojure"]]]))
-
-(defn gen-doc-index []
-  (app-layout
-   (interpose [:br]
-              (map #(link-to (str "/docs/" (.getName %))
-                             (rest (seq (.getName %))))
-                   (get-doc-index)))))
+     (include-css "/css/pygments.css" "/css/global.css")
+     [:base {:href "http://localhost:8080/docs" :target "main"}]]
+    [:frameset {:cols "250,*" :frameborder 0 :marginwidth 0 :marginheight 0 :scrolling "auto"}
+     [:frame {:src "http://localhost:8080/doc-index" :name "left"}]
+     [:frame {:src "http://localhost:8080/home" :name "main"}]]]))
 
 (defn doc-page [doc]
-  (app-layout (get-doc doc)))
+  (basic-layout (get-doc-markdown doc)))
 
 (def home-page
      (html
       [:h2 "Gentlemen, we have a whole lot of work to do..."]
-      [:p "Please consider " (link-to "http://github.com/defn/cljex" "contributing") " to this project.  It's a great way to learn more about Clojure and contribute to the community while you do it.  If you look to your right, you'll notice a whole lot of forms which need examples.  Many of them are one-liners and wont take more than a minute."]
-      [:p "If you don't have the time, no worries, but do consider " (link-to "http://clojure.org/" "donating") " to Clojure if you're able."]))
+      [:p "Please consider "
+       (link-to "http://github.com/defn/cljex" "contributing")
+       " to this project.  It's a great way to learn more about Clojure and contribute to the community while you do it.  If you look to your right, you'll notice a whole lot of forms which need examples.  Many of them yare one-liners and wont take more than a minute."]
+      [:p "If you don't have the time, no worries, but do consider "
+       (link-to "http://clojure.org/" "donating")
+       " to Clojure if you're able."]))
 
                                         ;==============================
                                         ; Define Routes
                                         ;==============================
 (defroutes doc-routes
-  (GET "/" (app-layout home-page))
-  (GET "/docs/:name" (doc-page (:name params))))
+  (GET "/" (app-layout-frames))
+  (GET "/docs/:name" (doc-page (:name params)))
+  (GET "/doc-index" (gen-doc-index-inline))
+  (GET "/home" (basic-layout home-page)))
 
 (defroutes static-routes
-  (GET "/*" (serve-file *public-dir* (params :*)))
-  (GET "/doc-index") (gen-doc-index-inline))
+  (GET "/*" (serve-file *public-dir* (params :*))))
 
 (defroutes error-routes
   (ANY "/*" [404 "404 Page Not Found"]))
@@ -150,9 +177,9 @@
                                         ;==============================
                                         ; Start Your REPL Engine
                                         ;==============================
-;;(run-server
-;; {:port 8080}
-;; "/*" (servlet all-routes))
+;; (run-server
+;;  {:port 8080}
+;;  "/*" (servlet all-routes))
 
                                         ;==============================
                                         ; Main
