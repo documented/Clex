@@ -17,12 +17,8 @@
    clojure.inspector])
 
 ;; TODO
-;; ~ Make dynamic frames with some JS
-;; ~ Move away from Python highlighting and use JS to do markdown + highlighting
+;; ~ Move away from Python highlighting and use JS to do markdown + highlighting instead.
 
-                                        ;==============================
-                                        ; Namespace Functions
-                                        ;==============================
 (defn discover-namespace
   "Gets all of the vals in the map produced by (ns-publics 'ns)"
   [ns]
@@ -30,9 +26,6 @@
 
 (defmacro discover-namespace* [ns] `(discover-namespace '~ns))
 
-                                        ;==============================
-                                        ; Format/Output Documentation
-                                        ;==============================
 (defn print-markdown-doc
   "Prints documentation in markdown format."
   [v]
@@ -54,9 +47,6 @@
       (write-lines (file-str *core-docs* filename)
                    (print-markdown-doc f)))))
 
-                                        ;==============================
-                                        ; Example Builder
-                                        ;==============================
 (defn get-file-names-to-set [dir]
   (set (map #(.getName %) (file-seq (java.io.File. dir)))))
 
@@ -64,10 +54,6 @@
      (let [core-docs (get-file-names-to-set *core-docs*)
            examples  (get-file-names-to-set *examples-dir*)]
        (intersection core-docs examples)))
-
-                                        ;==============================
-                                        ; Communicate with the server
-                                        ;==============================
 
 (defn basic-layout [& body]
   (html
@@ -107,12 +93,14 @@
 
 (defn gen-doc-index-frame []
   (basic-layout
-   (interpose [:br]
-              (map #(link-to-frame
-                     (str "/docs/" (.getName %))
-                     "main"
-                     (rest (seq (.getName %))))
-                   (get-doc-index)))))
+   (html
+    (cons [:h1 "cljex"]
+          (interpose [:br]
+                     (map #(link-to-frame
+                            (str "/docs/" (.getName %))
+                            "main"
+                            (rest (seq (.getName %))))
+                          (get-doc-index)))))))
 
 (defn app-layout [& body]
   (html
@@ -160,7 +148,7 @@
 (defroutes doc-routes
   (GET "/" (app-layout-frames))
   (GET "/docs/:name" (doc-page (:name params)))
-  (GET "/doc-index" (gen-doc-index-inline))
+  (GET "/doc-index" (gen-doc-index-frame))
   (GET "/home" (basic-layout home-page)))
 
 (defroutes static-routes
@@ -175,7 +163,7 @@
   error-routes)
 
                                         ;==============================
-                                        ; Start Your REPL Engine
+                                        ; Start Your REPL Engines
                                         ;==============================
 ;; (run-server
 ;;  {:port 8080}
