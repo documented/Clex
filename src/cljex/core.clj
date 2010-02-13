@@ -1,5 +1,6 @@
 (ns cljex.core
   (:gen-class)
+<<<<<<< HEAD:src/cljex/core.clj
   (:use compojure
         clojure.contrib.str-utils
         clojure.contrib.duck-streams
@@ -28,6 +29,31 @@
 (including the subdirectory file objects) and creates a set
 from that list."
   [dir]
+=======
+  [:use compojure
+   clojure.contrib.str-utils
+   clojure.contrib.duck-streams
+   clojure.contrib.shell-out
+   clojure.contrib.java-utils
+   clojure.set
+   autodoc.collect-info
+   cljex.config
+   cljex.build
+   cljex.views.application
+   cljex.controllers.application]
+  [:require
+   clojure.xml
+   clojure.walk
+   clojure.template
+   clojure.test
+   clojure.zip]
+  [:import (com.petebevin.markdown MarkdownProcessor)])
+
+;; TODO
+;; ~ Move away from Python highlighting and use JS to do markdown + highlighting instead.
+
+(defn get-file-names-to-set [dir]
+>>>>>>> ef15a290624b96eaec224dd3dbe69581c2bc2060:src/cljex/core.clj
   (set (map #(.getName %) (file-seq (java.io.File. dir)))))
 
 (def examples-which-exist
@@ -35,6 +61,7 @@ from that list."
            examples  (get-file-names-to-set *examples-dir*)]
        (intersection core-docs examples)))
 
+<<<<<<< HEAD:src/cljex/core.clj
 (defn basic-layout [& body]
   (html
    (doctype :xhtml)
@@ -69,6 +96,8 @@ from that list."
      (if (examples-which-exist doc)
        (.markdown md (slurp (str *examples-dir* doc)))))))
 
+=======
+>>>>>>> ef15a290624b96eaec224dd3dbe69581c2bc2060:src/cljex/core.clj
                                         ;==============================
                                         ; Layout
                                         ;==============================
@@ -176,6 +205,10 @@ with the supplied URL and target frame."
       'clojure.walk
       'clojure.xml
       'clojure.zip])
+<<<<<<< HEAD:src/cljex/core.clj
+=======
+
+>>>>>>> ef15a290624b96eaec224dd3dbe69581c2bc2060:src/cljex/core.clj
 
 (defn -main [& args]
   (if (= (first args) "--server")
@@ -184,4 +217,3 @@ with the supplied URL and target frame."
      "/*" (servlet all-routes))
     (doseq [ns namespaces-to-document]
       (create-docs ns))))
-
