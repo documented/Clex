@@ -1,53 +1,33 @@
 (ns cljex.core
   (:gen-class)
-  [:use compojure
-   clojure.contrib.str-utils
-   clojure.contrib.duck-streams
-   clojure.contrib.shell-out
-   clojure.set
-   autodoc.collect-info
-   cljex.config]
-  [:require
-   clojure.xml
-   clojure.walk
-   clojure.template
-   clojure.test
-   clojure.stacktrace
-   clojure.zip
-   clojure.inspector])
+  (:use compojure
+        clojure.contrib.str-utils
+        clojure.contrib.duck-streams
+        clojure.contrib.shell-out
+        clojure.set
+        autodoc.collect-info
+        (cljex utils build config)
+        (cljex.controllers application)
+        (cljex.views application))
+  (:require clojure.xml
+            clojure.walk
+            clojure.template
+            clojure.test
+            clojure.zip)
+  (:import (com.petebevin.markdown
+            MarkdownProcessor)))
 
 ;; TODO
 ;; ~ Move away from Python highlighting and use JS to do markdown + highlighting instead.
+;; ~ Organize this ugly core.clj file into a few places
+;; ~ make everything that needs to be displayed happen
+;;   in the views.* files
 
-(defn discover-namespace
-  "Gets all of the vals in the map produced by (ns-publics 'ns)"
-  [ns]
-  (vals (ns-publics ns)))
-
-(defmacro discover-namespace* [ns] `(discover-namespace '~ns))
-
-(defn print-markdown-doc
-  "Prints documentation in markdown format."
-  [v]
-  [(str "###" (:name (meta v)) "###\n")
-   (str "> *" (ns-name (:ns (meta v))) "/" (:name (meta v)) "*")
-   (str "> ")
-   (str ">     :::clojure")
-   (str ">     " (:arglists (meta v)) "")
-   (str "> ")
-   (when (:macro (meta v))
-     (str "> *Macro*\n"))
-   (str ">  " (re-gsub #"\n" "\n>" (str (:doc (meta v)))))])
-
-(defn create-docs
-  "Create the documentation for [nspace] in the *core-docs* directory."
-  [nspace]
-  (doseq [f (discover-namespace nspace)]
-    (let [filename (str "_" (:name (meta f)))]
-      (write-lines (file-str *core-docs* filename)
-                   (print-markdown-doc f)))))
-
-(defn get-file-names-to-set [dir]
+(defn get-file-names-to-set
+  "Gets all of the file-names in all of the subdirectories
+(including the subdirectory file objects) and creates a set
+from that list."
+  [dir]
   (set (map #(.getName %) (file-seq (java.io.File. dir)))))
 
 (def examples-which-exist
@@ -61,18 +41,33 @@
    [:html
     [:head
      [:title *site-title*]
-     (include-css "/css/global.css" "/css/github.css" "/css/pygments.css")]
+     (include-css "/css/global.css"
+                  "/css/github.css"
+                  "/css/pygments.css")]
     [:body ,,,body,,,]]))
 
 (defn get-doc [doc]
-  (str (sh *markdown-command* (str *core-docs* doc) "-x" "codehilite")
+  (str (sh *markdown-command*
+           (str *core-docs* doc)
+           "-x" "codehilite")
        (if (examples-which-exist doc)
-         (sh *markdown-command* (str *examples-dir* doc) "-x" "codehilite"))))
+         (sh *markdown-command*
+             (str *examples-dir* doc)
+             "-x" "codehilite"))))
+
+(defn get-doc [doc]
+  (str ))
 
 (defn get-doc-markdown [doc]
   (str (sh *markdown-command* (str *core-docs* doc))
        (if (examples-which-exist doc)
          (sh *markdown-command* (str *examples-dir* doc)))))
+
+(defn markdown [doc]
+  (let [md (new MarkdownProcessor)]
+    (str (.markdown md (slurp (str *core-docs* doc)))
+     (if (examples-which-exist doc)
+       (.markdown md (slurp (str *examples-dir* doc)))))))
 
                                         ;==============================
                                         ; Layout
@@ -81,7 +76,8 @@
   (sort (rest (file-seq (java.io.File. *core-docs*)))))
 
 (defn link-to-frame
-  "Wraps some content in a HTML hyperlink with the supplied URL and target frame."
+  "Wraps some content in a HTML hyperlink
+with the supplied URL and target frame."
   [url frame & content]
   [:a {:href url :target frame} content])
 
@@ -166,28 +162,26 @@
                                         ; Start Your REPL Engines
                                         ;==============================
 ;; (run-server
-;;  {:port 8080}
+;;  {:port 8081}
 ;;  "/*" (servlet all-routes))
 
                                         ;==============================
                                         ; Main
                                         ;==============================
-(def namespacen
+(def namespaces-to-document
      ['clojure.core
       'clojure.set
-      'clojure.stacktrace
       'clojure.template
       'clojure.test
       'clojure.walk
       'clojure.xml
-      'clojure.zip
-      'clojure.inspector])
+      'clojure.zip])
 
 (defn -main [& args]
   (if (= (first args) "--server")
     (run-server
      {:port 8080}
      "/*" (servlet all-routes))
-    (doseq [ns namespacen]
+    (doseq [ns namespaces-to-document]
       (create-docs ns))))
 
