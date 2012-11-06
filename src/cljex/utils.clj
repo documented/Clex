@@ -1,6 +1,3 @@
-<<<<<<< HEAD:src/cljex/utils.clj
-(ns cljex.utils)
-=======
 (ns cljex.utils
   (:use cljex.config
         cljex.build
@@ -16,4 +13,3 @@
            examples  (get-file-names-to-set *examples-dir*)]
        (intersection core-docs examples)))
 
->>>>>>> ef15a290624b96eaec224dd3dbe69581c2bc2060:src/cljex/utils.clj

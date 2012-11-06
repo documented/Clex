@@ -11,6 +11,5 @@
      (include-css "/css/global.css" "/css/github.css" "/css/pygments.css")]
     [:body ,,,body,,,]]))
 
-
 (defn get-doc-index []
   (sort (rest (file-seq (java.io.File. *core-docs*)))))
