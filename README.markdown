@@ -1,4 +1,4 @@
-# Clex is dead. Long live [GetClojure](https://github.com/devn/getclojure)
+# Clex is dead. Long live [GetClojure](https://github.com/devn/getclojure).
 
 This project is all about providing examples for the existing API
 documentation that can be found via your REPL `(doc name)`, or via
